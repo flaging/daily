@@ -7,6 +7,9 @@ fi
 mkdir /tmp/docs
 mdbook build -d /tmp/docs
 git checkout gh-page
+if [[ -d docs ]];then
+rm docs -rf
+fi
 mv /tmp/docs .
 git add *
 git commit -m "[build] update data from main"
