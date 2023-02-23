@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 git checkout main
-mdbook build -d .
+mkdir docs
+mdbook build -d docs
 git checkout gh-page
 git add *
 git commit -m "[build] update data from main"
