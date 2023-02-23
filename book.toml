@@ -1,0 +1,6 @@
+[book]
+authors = ["flaging"]
+language = "en"
+multilingual = false
+src = "src"
+title = "福来鸽日报"
