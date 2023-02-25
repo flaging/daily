@@ -14,3 +14,4 @@ mv /tmp/docs .
 git add *
 git commit -m "[build] update data from main"
 git push origin gh-page:gh-page -f
+git checkout main
