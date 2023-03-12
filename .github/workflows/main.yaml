@@ -26,7 +26,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - name: git clone
+        run: |
+          git config --local user.email "liyupeng341@163.com"
+          git config --local user.name "flaging-bot"
       # Runs a single command using the runners shell
       - name: update
         run:
