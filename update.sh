@@ -7,7 +7,7 @@ fi
 mkdir /tmp/docs
 chmod +x ./mdbook
 ./mdbook build -d /tmp/docs
-git checkout gh-page
+git checkout -b gh-page
 if [[ -d docs ]];then
 rm docs -rf
 fi
