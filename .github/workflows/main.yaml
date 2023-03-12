@@ -17,7 +17,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: flaging01/mdbook-env:v0.1
+    runs-on: ubuntu-22.04
     
     env:
       TZ: Asia/Shanghai
