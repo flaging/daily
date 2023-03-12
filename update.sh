@@ -5,6 +5,7 @@ if [[ -d /tmp/docs ]];then
 rm -rf /tmp/docs/
 fi
 mkdir /tmp/docs
+chmod +x ./mdbook
 ./mdbook build -d /tmp/docs
 git checkout gh-page
 if [[ -d docs ]];then
