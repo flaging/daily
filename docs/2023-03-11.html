@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2023年03月11日 - 福来鸽的网络收纳盒[周更版]</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="2023-04-15.html"><strong aria-hidden="true">1.</strong> 2023年04月15日</a></li><li class="chapter-item expanded "><a href="2023-04-08.html"><strong aria-hidden="true">2.</strong> 2023年04月08日</a></li><li class="chapter-item expanded "><a href="2023-04-01.html"><strong aria-hidden="true">3.</strong> 2023年04月01日</a></li><li class="chapter-item expanded "><a href="2023-03-11.html" class="active"><strong aria-hidden="true">4.</strong> 2023年03月11日</a></li><li class="chapter-item expanded "><a href="2023-03-04.html"><strong aria-hidden="true">5.</strong> 2023年03月04日</a></li><li class="chapter-item expanded "><a href="2023-02-25.html"><strong aria-hidden="true">6.</strong> 2023年02月25日</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">福来鸽的网络收纳盒[周更版]</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="2022年03月11日第3期"><a class="header" href="#2022年03月11日第3期">2022年03月11日第3期</a></h1>
+<p>如果只收集不整理, 等到需要使用的时候也很难找到, 就脱离了收集的本意. </p>
+<p>收纳=收集+整理</p>
+<h2 id="硬件加速"><a class="header" href="#硬件加速">硬件加速</a></h2>
+<h3 id="uifgithub"><a class="header" href="#uifgithub"><a href="https://github.com/amd/UIF">UIF@github</a></a></h3>
+<ul>
+<li>AMD统一推理前端, 支持AMD CPU, GPU和FPGA</li>
+</ul>
+<h3 id="dgx-a100-review-throughput-and-hardware-summary"><a class="header" href="#dgx-a100-review-throughput-and-hardware-summary"><a href="https://www.microway.com/hpc-tech-tips/dgx-a100-review-throughput-and-hardware-summary/">DGX A100 review: Throughput and Hardware Summary</a></a></h3>
+<ul>
+<li>DGX A100的详细硬件描述, 包含硬件连接和主要参数</li>
+</ul>
+<h3 id="青桥如何学习cuda编程zhihu"><a class="header" href="#青桥如何学习cuda编程zhihu"><a href="https://www.zhihu.com/question/62996995/answer/2888755233?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1615709097168404480&amp;utm_source=ZHShareTargetIDMore">青桥​:如何学习cuda编程？@zhihu</a></a></h3>
+<ul>
+<li>cuda环境配置<a href="https://blog.csdn.net/chen565884393/article/details/127905428">CSDN</a></li>
+<li>cuda by example: 图书和代码 <a href="https://rec.ustc.edu.cn/share/73b882a0-aa27-11ed-ae78-4d66dac20831">网盘</a></li>
+<li>cuda权威编程指南: <a href="https://rec.ustc.edu.cn/share/256d2ed0-aa28-11ed-8e4d-cd56030fc8f3">PDF</a></li>
+</ul>
+<h3 id="第二章gpu硬件构架zhihu"><a class="header" href="#第二章gpu硬件构架zhihu"><a href="https://zhuanlan.zhihu.com/p/609787347?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1615708943480479745&amp;utm_source=ZHShareTargetIDMore">第二章/GPU硬件构架@zhihu</a></a></h3>
+<ul>
+<li>Nvidia GPU硬件基础</li>
+</ul>
+<h3 id="patch-0007-risc-v-add-auto-vectorization-support"><a class="header" href="#patch-0007-risc-v-add-auto-vectorization-support"><a href="https://gcc.gnu.org/pipermail/gcc-patches/2023-March/613260.html">[PATCH 00/07] RISC-V: Add auto-vectorization support</a></a></h3>
+<ul>
+<li>RISC-V的自动向量化支持patch代码</li>
+</ul>
+<h3 id="gpu-优化技术-opencl-kernel-开发"><a class="header" href="#gpu-优化技术-opencl-kernel-开发"><a href="https://aijishu.com/a/1060000000352788">GPU 优化技术-OpenCL kernel 开发</a></a></h3>
+<ul>
+<li>openCL</li>
+</ul>
+<h3 id="详解-nvidia-h100-transformerengine"><a class="header" href="#详解-nvidia-h100-transformerengine"><a href="https://aijishu.com/a/1060000000362211">详解 NVIDIA H100 TransformerEngine</a></a></h3>
+<ul>
+<li>H100 硬件结构分析</li>
+</ul>
+<h3 id="ai芯片高性能卷积计算中的数据复用"><a class="header" href="#ai芯片高性能卷积计算中的数据复用"><a href="https://www.cnblogs.com/sea-wind/p/11421688.html">AI芯片：高性能卷积计算中的数据复用</a></a></h3>
+<ul>
+<li>卷积的算法加速及硬件实现</li>
+<li><a href="https://www.cnblogs.com/sea-wind/p/12452725.html">矩阵乘法加速器的设计框架</a></li>
+<li><a href="https://www.cnblogs.com/sea-wind/p/11767969.html">NVDLA中Winograd卷积的设计</a></li>
+<li><a href="https://www.cnblogs.com/sea-wind/p/11241018.html">Simple TPU的设计和性能评估</a></li>
+</ul>
+<h3 id="如何加速矩阵乘法优化gemm-cpu单线程篇"><a class="header" href="#如何加速矩阵乘法优化gemm-cpu单线程篇"><a href="https://renzibei.com/2021/06/30/optimize-gemm/">如何加速矩阵乘法——优化GEMM (CPU单线程篇)</a></a></h3>
+<ul>
+<li>CPU矩阵优化分析</li>
+</ul>
+<h2 id="模型算法"><a class="header" href="#模型算法">模型算法</a></h2>
+<h3 id="llama-dlgithub"><a class="header" href="#llama-dlgithub"><a href="https://github.com/shawwn/llama-dl">llama-dl@github</a></a></h3>
+<ul>
+<li>llama checkpoint下载</li>
+<li><code>magnet:?xt=urn:btih:b8287ebfa04f879b048d4d4404108cf3e8014352&amp;dn=LLaMA&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce</code></li>
+</ul>
+<h3 id="high-resolution-image-reconstruction-with-latent-diffusion-models-from-human-brain-activity"><a class="header" href="#high-resolution-image-reconstruction-with-latent-diffusion-models-from-human-brain-activity"><a href="https://www.biorxiv.org/content/10.1101/2022.11.18.517004v2">High-resolution image reconstruction with latent diffusion models from human brain activity</a></a></h3>
+<ul>
+<li>stable diffusion模型根据核磁共振数据能够重建图像</li>
+</ul>
+<h3 id="instructgpt介绍"><a class="header" href="#instructgpt介绍"><a href="https://aijishu.com/a/1060000000387749">InstructGPT介绍</a></a></h3>
+<ul>
+<li>论文分析</li>
+</ul>
+<h3 id="understanding-and-coding-the-self-attention-mechanism-of-large-language-models-from-scratch"><a class="header" href="#understanding-and-coding-the-self-attention-mechanism-of-large-language-models-from-scratch"><a href="https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html">Understanding and Coding the Self-Attention Mechanism of Large Language Models From Scratch</a></a></h3>
+<ul>
+<li>attention机制分析</li>
+</ul>
+<h3 id="understanding-large-language-models----a-transformative-reading-list"><a class="header" href="#understanding-large-language-models----a-transformative-reading-list"><a href="https://sebastianraschka.com/blog/2023/llm-reading-list.html">Understanding Large Language Models -- A Transformative Reading List</a></a></h3>
+<ul>
+<li>大模型论文整理</li>
+</ul>
+<h2 id="计算基础"><a class="header" href="#计算基础">计算基础</a></h2>
+<h3 id="math-cyclic-redundancy-check-yet-another-interesting-feature"><a class="header" href="#math-cyclic-redundancy-check-yet-another-interesting-feature"><a href="https://yurichev.org/CRC/">[Math] Cyclic redundancy check: yet another interesting feature</a></a></h3>
+<ul>
+<li>CRC具有线性特性: 具体分析在<a href="https://math.stackexchange.com/questions/1856341/why-is-the-crc-essentially-polynomial-division-over-gf2-linear">StackOverflow</a></li>
+<li>作者的编程数学相关的手稿<a href="https://math.recipes/Math-recipes.pdf">PDF</a></li>
+</ul>
+<h3 id="编译器优化那些事儿1slp矢量化介绍"><a class="header" href="#编译器优化那些事儿1slp矢量化介绍"><a href="https://aijishu.com/a/1060000000385757">编译器优化那些事儿（1）：SLP矢量化介绍</a></a></h3>
+<ul>
+<li>极术转载的编译器优化文章,本文是第一部分</li>
+<li><a href="https://aijishu.com/a/1060000000386007">编译器优化那些事儿（2）：常量传播</a></li>
+<li><a href="https://aijishu.com/a/1060000000386334">编译器优化那些事儿（3）：Lazy Code Motion</a></li>
+<li><a href="https://aijishu.com/a/1060000000386641">编译器优化那些事儿（4）：归纳变量</a></li>
+<li><a href="https://aijishu.com/a/1060000000388747">编译器优化那些事儿（5）：寄存器分配</a></li>
+</ul>
+<h3 id="浮点峰值的那些事"><a class="header" href="#浮点峰值的那些事"><a href="https://aijishu.com/a/1060000000376863">浮点峰值的那些事</a></a></h3>
+<ul>
+<li>浮点数性能计算,带CPU测试工具<a href="https://github.com/pigirons/cpufp">cpufp@github</a></li>
+</ul>
+<h3 id="自制深度学习推理框架-前言-第一课"><a class="header" href="#自制深度学习推理框架-前言-第一课"><a href="https://aijishu.com/a/1060000000375779">自制深度学习推理框架-前言-第一课</a></a></h3>
+<ul>
+<li>系列文章,这是第一课</li>
+</ul>
+<h3 id="tvm-学习指南个人版上"><a class="header" href="#tvm-学习指南个人版上"><a href="https://aijishu.com/a/1060000000350384#item-2-1">TVM 学习指南（个人版）上</a></a></h3>
+<ul>
+<li><a href="https://aijishu.com/a/1060000000350440">TVM 学习指南（个人版）下</a></li>
+</ul>
+<h3 id="自制深度学习推理框架-前言-第一课-1"><a class="header" href="#自制深度学习推理框架-前言-第一课-1"><a href="https://aijishu.com/a/1060000000375779">自制深度学习推理框架-前言-第一课</a></a></h3>
+<ul>
+<li><a href="https://aijishu.com/a/1060000000376590">自制深度学习推理框架-张量类Tensor的实现-第二课</a></li>
+<li><a href="https://aijishu.com/a/1060000000376797">自制深度学习推理框架-实现我们的第一个算子Relu-第三课</a></li>
+<li>未完待续</li>
+<li>代码实现在<a href="https://github.com/zjhellofss/KuiperInfer">KuiperInfer@github</a>, b站讲解在<a href="https://www.bilibili.com/video/BV1HV4y1A7H8/?vd_source=174953c3657af6bc2e1af4806ef6c667">我是傅傅猪@bilibili</a></li>
+</ul>
+<h3 id="usenix-srecon-apac-2022-computing-performance-whats-on-the-horizon"><a class="header" href="#usenix-srecon-apac-2022-computing-performance-whats-on-the-horizon"><a href="https://www.brendangregg.com/blog/2023-03-01/computer-performance-future-2022.html">USENIX SREcon APAC 2022: Computing Performance: What's on the Horizon</a></a></h3>
+<ul>
+<li>Brendan Gregg在USENIX上的演讲,主要讲2023年以后计算机各领域的发展趋势, 视频在<a href="https://www.youtube.com/watch?v=zGSQdN2X_k0">youtube</a>, ppt在<a href="https://www.brendangregg.com/Slides/SREcon2022_ComputingPerformance.pdf">blog</a></li>
+<li>作者是<a href="https://raw.githubusercontent.com/wuzhouhui/misc/master/Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf">Systems Performance: Enterprise and the Cloud, 2nd Edition</a>的作者</li>
+</ul>
+<h2 id="实用工具"><a class="header" href="#实用工具">实用工具</a></h2>
+<h3 id="cv_emuluategithub"><a class="header" href="#cv_emuluategithub"><a href="https://github.com/hongtaoh/cv_emulate">cv_emuluate@github</a></a></h3>
+<ul>
+<li>简历模板</li>
+</ul>
+<h3 id="compose-examplesgithub"><a class="header" href="#compose-examplesgithub"><a href="https://github.com/Haxxnet/Compose-Examples">Compose-Examples@github</a></a></h3>
+<ul>
+<li>docker用例</li>
+</ul>
+<h3 id="part-1-how-to-approach-a-system-design-interview"><a class="header" href="#part-1-how-to-approach-a-system-design-interview"><a href="https://interviewing.io/guides/system-design-interview">Part 1: How to approach a system design interview</a></a></h3>
+<ul>
+<li>面试</li>
+</ul>
+<h3 id="译-borgomegak8sgoogle-十年三代容器管理系统的设计与思考acm-2016"><a class="header" href="#译-borgomegak8sgoogle-十年三代容器管理系统的设计与思考acm-2016"><a href="http://arthurchiao.art/blog/borg-omega-k8s-zh/">[译] Borg、Omega、K8s：Google 十年三代容器管理系统的设计与思考（ACM, 2016）</a></a></h3>
+<ul>
+<li>k8s及其前辈的历史</li>
+</ul>
+<h3 id="很抱歉onenote-正在清理上次打开之后的内容请稍后"><a class="header" href="#很抱歉onenote-正在清理上次打开之后的内容请稍后"><a href="http://cn.onenotegem.com/a/addins/fix-one.html">很抱歉，OneNote 正在清理上次打开之后的内容。请稍后。</a></a></h3>
+<ul>
+<li>OneNote问题解决工具</li>
+</ul>
+<h2 id="生活杂谈"><a class="header" href="#生活杂谈">生活杂谈</a></h2>
+<h3 id="微彰琦谈荐书weibo"><a class="header" href="#微彰琦谈荐书weibo"><a href="https://weibo.com/1102141664/MvSLSb7IM">微彰琦谈:荐书@weibo</a></a></h3>
+<ul>
+<li>世界舞台上的国际政治</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2023-04-01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="2023-03-04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2023-04-01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="2023-03-04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2023年04月08日 - 福来鸽的网络收纳盒[周更版]</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="2023-04-15.html"><strong aria-hidden="true">1.</strong> 2023年04月15日</a></li><li class="chapter-item expanded "><a href="2023-04-08.html" class="active"><strong aria-hidden="true">2.</strong> 2023年04月08日</a></li><li class="chapter-item expanded "><a href="2023-04-01.html"><strong aria-hidden="true">3.</strong> 2023年04月01日</a></li><li class="chapter-item expanded "><a href="2023-03-11.html"><strong aria-hidden="true">4.</strong> 2023年03月11日</a></li><li class="chapter-item expanded "><a href="2023-03-04.html"><strong aria-hidden="true">5.</strong> 2023年03月04日</a></li><li class="chapter-item expanded "><a href="2023-02-25.html"><strong aria-hidden="true">6.</strong> 2023年02月25日</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">福来鸽的网络收纳盒[周更版]</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="2022年04月08日第5期"><a class="header" href="#2022年04月08日第5期">2022年04月08日第5期</a></h1>
+<p>上周推特开源了其推荐算法,火起来的只有twitter对阿龙的特殊对待, 不知道有多少人看了内部的细节.</p>
+<p>谷歌公开了TPU v4的一些细节, 看起来这两年, intel被AMD挤了好大一管牙膏, Google也要被OpenAI挤牙膏喽.</p>
+<h2 id="硬件加速"><a class="header" href="#硬件加速">硬件加速</a></h2>
+<h3 id="陈巍谈芯3上-gpgpu流式多处理器架构之取指译码发射gpgpu-芯片设计原理与实践节选"><a class="header" href="#陈巍谈芯3上-gpgpu流式多处理器架构之取指译码发射gpgpu-芯片设计原理与实践节选"><a href="https://zhuanlan.zhihu.com/p/572302589?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1626489285682606080&amp;utm_source=ZHShareTargetIDMore">陈巍谈芯：3（上） GPGPU流式多处理器架构之取指译码发射——《GPGPU 芯片设计：原理与实践》节选</a></a></h3>
+<ul>
+<li>GPGPU硬件原理系列, 讲解比较深刻, <a href="https://www.zhihu.com/column/c_1480197764110303232">GPGPU 芯片设计：原理与实践</a>专栏和<a href="https://www.zhihu.com/people/chenweiphd/posts?page=3">陈巍谈芯</a>值得关注</li>
+</ul>
+<h3 id="colossal-ai-and-intel-partner-to-deliver-cost-efficient-open-source-solution-for-protein-folding-structure-prediction-with-habana-gaudi-processors"><a class="header" href="#colossal-ai-and-intel-partner-to-deliver-cost-efficient-open-source-solution-for-protein-folding-structure-prediction-with-habana-gaudi-processors"><a href="https://www.hpc-ai.tech/blog/intel-habana">Colossal-AI and Intel® Partner to Deliver Cost-Efficient Open-Source Solution for Protein Folding Structure Prediction with Habana Gaudi Processors</a></a></h3>
+<ul>
+<li>colossal-AI和habana Gaudi的合作,比较有趣.</li>
+<li><a href="https://github.com/hpcaitech/ColossalAI#biomedicine">Colossal-AI</a>: 新兴训练框架</li>
+<li><a href="https://developer.habana.ai/resources/habana-models-performance/">Habana Gaudi Perf</a>:性能看起来不错,但是都是用bf16进行的, <a href="https://github.com/HabanaAI/Model-References/tree/master/TensorFlow/computer_vision/Resnets/resnet_keras#model-overview">Resnet</a>和<a href="https://github.com/HabanaAI/Model-References/tree/master/TensorFlow/nlp/bert">bert</a>的代码已经放出</li>
+<li><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/resources/resnet_50_v1_5_for_tensorflow/performance">Nvidia A100性能</a></li>
+</ul>
+<h3 id="megengine-tensorcore-卷积算子实现原理"><a class="header" href="#megengine-tensorcore-卷积算子实现原理"><a href="https://aijishu.com/a/1060000000206213">MegEngine TensorCore 卷积算子实现原理</a></a></h3>
+<ul>
+<li>GEMM计算的优化方法</li>
+<li>文中还提到了CUTLASS的使用: <a href="https://mp.weixin.qq.com/s?__biz=MzU4NTkwMDM1NA==&amp;mid=2247487659&amp;idx=1&amp;sn=02aa4e7242d33699158c3491eff78fe5&amp;chksm=fd82d886caf5519020d306a9a3d7e91d276678b5563cb87e24cb168328a9e2d3d7ccd675997c&amp;scene=21#wechat_redirect">黑科技：用cutlass进行低成本、高性能卷积算子定制开发</a></li>
+<li><a href="https://aijishu.com/a/1060000000202736">分享实录上篇：利用 MegEngine 分布式通信算子实现复杂的并行训练</a></li>
+<li><a href="https://aijishu.com/a/1060000000203467">分享实录下篇：利用 MegEngine 分布式通信算子实现复杂的并行训练</a></li>
+</ul>
+<h3 id="加速transformer稀疏注意力加速器调研"><a class="header" href="#加速transformer稀疏注意力加速器调研"><a href="https://www.birentech.com/Research_nstitute_details/10.html">加速Transformer：稀疏注意力加速器调研</a></a></h3>
+<ul>
+<li>壁仞关于Transformer模型长seq_lens情形下加速器的优化设计</li>
+</ul>
+<h3 id="对壁仞科技br100的fp32性能的商榷"><a class="header" href="#对壁仞科技br100的fp32性能的商榷"><a href="https://zhuanlan.zhihu.com/p/553502423">对壁仞科技BR100的FP32性能的商榷</a></a></h3>
+<ul>
+<li>对壁仞算力的分析:其中有很多时Matrix性能</li>
+</ul>
+<h3 id="hotchip-homepage"><a class="header" href="#hotchip-homepage"><a href="https://hotchips.org/">hotchip homepage</a></a></h3>
+<ul>
+<li>芯片领域的重要会议, 去年发布了很多AI芯片(看<a href="https://hc34.hotchips.org/">这里</a>)</li>
+</ul>
+<h3 id="tenstorrent的hotchips材料微博"><a class="header" href="#tenstorrent的hotchips材料微博"><a href="https://weibo.com/2144454703/MAi3jCUFH">Tenstorrent的hotchips材料@微博</a></a></h3>
+<ul>
+<li>微博芯片大佬对Tenstorrent在hotchips上演讲的总结, 有点堆多核的感觉, 想原生支持pytorch</li>
+</ul>
+<h3 id="aiot时代的编程语言编译器与指令集架构机遇挑战与技术分享"><a class="header" href="#aiot时代的编程语言编译器与指令集架构机遇挑战与技术分享"><a href="https://aijishu.com/a/1060000000392267">AIOT时代的编程语言、编译器与指令集架构：机遇、挑战与技术分享</a></a></h3>
+<ul>
+<li>AI编译器的历史现状和发展方向</li>
+</ul>
+<h3 id="arm64-mpam资源隔离特性介绍"><a class="header" href="#arm64-mpam资源隔离特性介绍"><a href="https://aijishu.com/a/1060000000393432">ARM64 MPAM资源隔离特性介绍</a></a></h3>
+<ul>
+<li>arm的隔离特性, QoS, 接近intel的RDT</li>
+<li>文中有提供一些测试的工具方法</li>
+</ul>
+<h3 id="new-amd-ryzen-cpus-intel-sapphire-rapids-rust-adoption--more-in-q1"><a class="header" href="#new-amd-ryzen-cpus-intel-sapphire-rapids-rust-adoption--more-in-q1"><a href="https://www.phoronix.com/news/Q1-2023-Recap">New AMD Ryzen CPUs, Intel Sapphire Rapids, Rust Adoption &amp; More In Q1</a></a></h3>
+<ul>
+<li>作者列举了CPU/GPU性能测评的系列文章, 有下文等:
+<ul>
+<li>CPU: <a href="https://www.phoronix.com/review/amd-ryzen9-7950x3d-linux">AMD Ryzen 9 7950X3D</a>, <a href="https://www.phoronix.com/review/ryzen-7600-7700-7900-linux">AMD Ryzen 5 7600 / Ryzen 7 7700 / Ryzen 9 7900</a>, <a href="https://www.phoronix.com/review/intel-xeon-platinum-8490h">Intel Xeon Platinum 8490H &quot;Sapphire Rapids&quot;</a></li>
+<li>GPU: <a href="https://www.phoronix.com/review/nvidia-rtx4080-rtx4090-linux">GeForce RTX 4080 and RTX 4090</a></li>
+<li>分析: <a href="https://www.phoronix.com/review/amd-7900x3d-7950x3d">AMD Ryzen 9 7900X3D and Ryzen 9 7950X3D</a>, <a href="https://www.phoronix.com/review/intel-sapphirerapids-avx512">AMD Genoa vs. Intel Sapphire Rapids &amp; Ice Lake</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="gpu-topk"><a class="header" href="#gpu-topk"><a href="https://github.com/anilshanbhag/gpu-topk">GPU-TopK</a></a></h3>
+<ul>
+<li>GPU的topk算法, 双调等</li>
+</ul>
+<h3 id="测试cpu性能planteggtwitter"><a class="header" href="#测试cpu性能planteggtwitter"><a href="https://twitter.com/plantegg/status/1643163271137226752">测试CPU性能plantegg@twitter</a></a></h3>
+<ul>
+<li><a href="https://github.com/intel/lmbench">lmbench</a>: CPU性能测试工具</li>
+<li><a href="https://mp.weixin.qq.com/s/QNgMS0gOXhZml8l_towAbw">揭秘 cache 访问延迟背后的计算机原理</a>: CPU cache性能测试方法</li>
+</ul>
+<h3 id="谷歌最强ai超算碾压英伟达a100tpu-v4性能提升10倍细节首次公开"><a class="header" href="#谷歌最强ai超算碾压英伟达a100tpu-v4性能提升10倍细节首次公开"><a href="https://mp.weixin.qq.com/s/iIJgUwCfupZZBTb_AYNuZQ">谷歌最强AI超算碾压英伟达A100！TPU v4性能提升10倍，细节首次公开</a></a></h3>
+<ul>
+<li>google TPU v4</li>
+<li><a href="https://mp.weixin.qq.com/s/iIJgUwCfupZZBTb_AYNuZQ">arxiv</a></li>
+<li>性能是A100的1.7倍, Graphcore Bow的4.x倍</li>
+</ul>
+<h3 id="大型语言模型的推理演算"><a class="header" href="#大型语言模型的推理演算"><a href="https://mp.weixin.qq.com/s/2wfUQNsH4IRuJEF39mebUQ">大型语言模型的推理演算</a></a></h3>
+<ul>
+<li>模型性能的理论计算, 十分详细, Oneflow的翻译质量很高</li>
+<li>原文在<a href="https://kipp.ly/blog/transformer-inference-arithmetic/">这里</a></li>
+</ul>
+<h3 id="读论文之基于-fpga-的并行全比较排序算法"><a class="header" href="#读论文之基于-fpga-的并行全比较排序算法"><a href="https://blog.csdn.net/Reborn_Lee/article/details/80469391">读论文之《基于 FPGA 的并行全比较排序算法》</a></a></h3>
+<ul>
+<li>FPGA的并行排序算法, 带源码</li>
+</ul>
+<h3 id="installing-aitemplate"><a class="header" href="#installing-aitemplate"><a href="https://facebookincubator.github.io/AITemplate/install/index.html">Installing AITemplate</a></a></h3>
+<ul>
+<li>AITemplate使用文档</li>
+</ul>
+<h3 id="性能之巅-第2版读书笔记第6章下-小川cdweibo"><a class="header" href="#性能之巅-第2版读书笔记第6章下-小川cdweibo"><a href="https://weibo.com/1202332555/MAj4c3Ff0">《性能之巅 第2版》读书笔记（第6章下） 小川CD@weibo</a></a></h3>
+<ul>
+<li>第六章, 博主有一个系列</li>
+</ul>
+<h2 id="模型算法"><a class="header" href="#模型算法">模型算法</a></h2>
+<h3 id="the-annotated-transformer"><a class="header" href="#the-annotated-transformer"><a href="https://nlp.seas.harvard.edu/2018/04/03/attention.html">The Annotated Transformer</a></a></h3>
+<ul>
+<li>harvardnlp, transformer经典实现</li>
+</ul>
+<h3 id="大型语言模型综述全新出炉从t5到gpt-4最全盘点国内20余位研究者联合撰写"><a class="header" href="#大型语言模型综述全新出炉从t5到gpt-4最全盘点国内20余位研究者联合撰写"><a href="https://www.jiqizhixin.com/articles/2023-04-03">大型语言模型综述全新出炉：从T5到GPT-4最全盘点，国内20余位研究者联合撰写</a></a></h3>
+<ul>
+<li>大模型综述, 论文原文在<a href="https://arxiv.org/abs/2303.18223">arxiv</a></li>
+</ul>
+<h3 id="the-algorithm"><a class="header" href="#the-algorithm"><a href="https://github.com/twitter/the-algorithm">the-algorithm</a></a></h3>
+<ul>
+<li>推特开源的推荐算法, 在<a href="https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm">官方博客</a>上也有介绍</li>
+<li>一同开源的还有<a href="https://github.com/twitter/the-algorithm-ml">the-algorithm-ml</a>, <a href="https://opensource.twitter.dev/">推特开源网站</a>也有详细介绍</li>
+</ul>
+<h3 id="deep-learning-do-it-yourself"><a class="header" href="#deep-learning-do-it-yourself"><a href="https://dataflowr.github.io/website/">Deep Learning Do It Yourself!</a></a></h3>
+<ul>
+<li>自学深度学习</li>
+</ul>
+<h3 id="hugginggpt-solving-ai-tasks-with-chatgpt-and-its-friends-in-huggingface"><a class="header" href="#hugginggpt-solving-ai-tasks-with-chatgpt-and-its-friends-in-huggingface"><a href="https://paperswithcode.com/paper/hugginggpt-solving-ai-tasks-with-chatgpt-and">HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace</a></a></h3>
+<ul>
+<li>使用GPT作为控制面, 调用huggingface的其他模型解决问题</li>
+<li>代码开源在<a href="https://github.com/microsoft/JARVIS">github</a></li>
+</ul>
+<h3 id="token-merging-for-fast-stable-diffusion"><a class="header" href="#token-merging-for-fast-stable-diffusion"><a href="https://paperswithcode.com/paper/token-merging-for-fast-stable-diffusion">Token Merging for Fast Stable Diffusion</a></a></h3>
+<ul>
+<li>Fast SD: 通过合并token减少计算量</li>
+</ul>
+<h3 id="如何评估大语言模型"><a class="header" href="#如何评估大语言模型"><a href="https://mp.weixin.qq.com/s/EKubSNjUqDRbUBkXU92hsw">如何评估大语言模型</a></a></h3>
+<ul>
+<li>大模型的评估方法和工具</li>
+</ul>
+<h3 id="极低资源条件下如何微调大模型lora模型思想与bloom-lora代码实现分析"><a class="header" href="#极低资源条件下如何微调大模型lora模型思想与bloom-lora代码实现分析"><a href="https://mp.weixin.qq.com/s/iog2jGpb2yYQnuhSW6yH4Q">极低资源条件下如何微调大模型：LoRA模型思想与BLOOM-LORA代码实现分析</a></a></h3>
+<ul>
+<li>LoRA和BLOOM的微调方式</li>
+</ul>
+<h3 id="官方教程chatglm-6b-微调最低只需-7gb-显存"><a class="header" href="#官方教程chatglm-6b-微调最低只需-7gb-显存"><a href="https://mp.weixin.qq.com/s/EnfKFMflFgIBv9fG1VGE2g">【官方教程】ChatGLM-6B 微调，最低只需 7GB 显存</a></a></h3>
+<ul>
+<li>ChatGLM</li>
+</ul>
+<h3 id="微软提出自动化神经网络训练剪枝框架oto一站式获得高性能轻量化模型"><a class="header" href="#微软提出自动化神经网络训练剪枝框架oto一站式获得高性能轻量化模型"><a href="https://mp.weixin.qq.com/s/DLuSmtS0IZ8mDsSQjPWyVQ">微软提出自动化神经网络训练剪枝框架OTO，一站式获得高性能轻量化模型</a></a></h3>
+<ul>
+<li>自动剪枝工具, MS</li>
+</ul>
+<h3 id="推出新一代npu安谋科技应战ai新时代要催化本土芯片创新"><a class="header" href="#推出新一代npu安谋科技应战ai新时代要催化本土芯片创新"><a href="https://aijishu.com/a/1060000000393744">推出新一代NPU！安谋科技应战AI新时代，要催化本土芯片创新</a></a></h3>
+<ul>
+<li>AMD的新产品</li>
+</ul>
+<h3 id="metaai提出diffmae扩散模型与mae的首次结合"><a class="header" href="#metaai提出diffmae扩散模型与mae的首次结合"><a href="https://hub.baai.ac.cn/view/25331">MetaAI提出DIFFMAE：扩散模型与MAE的首次结合</a></a></h3>
+<ul>
+<li>DIFFUSION+MAE: <a href="https://arxiv.org/pdf/2304.03283.pdf">arxiv</a></li>
+</ul>
+<h3 id="fastchat"><a class="header" href="#fastchat"><a href="https://github.com/lm-sys/FastChat">FastChat</a></a></h3>
+<ul>
+<li>小羊驼, 低成本finetune LLAMA的模型, 公开的权重delta在<a href="https://huggingface.co/lmsys/vicuna-7b-delta-v0">这里</a></li>
+</ul>
+<h2 id="计算基础"><a class="header" href="#计算基础">计算基础</a></h2>
+<h3 id="linked-lists-pointer-tricks-and-good-taste"><a class="header" href="#linked-lists-pointer-tricks-and-good-taste"><a href="https://github.com/mkirchner/linked-list-good-taste">Linked lists, pointer tricks and good taste</a></a></h3>
+<ul>
+<li>Linus对于编程品味的描述, 体现在链表的一个小问题上</li>
+</ul>
+<h3 id="everything-i-wish-i-knew-when-learning-c"><a class="header" href="#everything-i-wish-i-knew-when-learning-c"><a href="https://tmewett.com/c-tips/">Everything I wish I knew when learning C</a></a></h3>
+<ul>
+<li>C语言使用要点</li>
+</ul>
+<h3 id="右值引用与移动语义"><a class="header" href="#右值引用与移动语义"><a href="https://zhuanlan.zhihu.com/p/545494408">右值引用与移动语义</a></a></h3>
+<ul>
+<li>对右值的讨论</li>
+</ul>
+<h3 id="what-every-programmer-should-know-about-memory"><a class="header" href="#what-every-programmer-should-know-about-memory"><a href="https://akkadia.org/drepper/cpumemory.pdf?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">What Every Programmer Should Know About Memory</a></a></h3>
+<ul>
+<li>内存知识</li>
+</ul>
+<h3 id="存储分布式存储引擎等领域论文阅读笔记索引"><a class="header" href="#存储分布式存储引擎等领域论文阅读笔记索引"><a href="https://github.com/lichuang/storage-paper-reading-cn">存储（分布式、存储引擎等）领域论文阅读笔记索引</a></a></h3>
+<ul>
+<li>存储领域论文清单</li>
+</ul>
+<h2 id="实用工具"><a class="header" href="#实用工具">实用工具</a></h2>
+<h3 id="matplotlib-cheatsheet"><a class="header" href="#matplotlib-cheatsheet"><a href="https://github.com/matplotlib/cheatsheets">matplotlib cheatsheet</a></a></h3>
+<ul>
+<li>PDF版本</li>
+</ul>
+<h3 id="python-environment-variables"><a class="header" href="#python-environment-variables"><a href="https://docs.python.org/3/using/cmdline.html#environment-variables">Python Environment variables</a></a></h3>
+<ul>
+<li>python的环境变量: PYTHONPATH, PYTHONHOME</li>
+</ul>
+<h3 id="learn-python-the-right-way"><a class="header" href="#learn-python-the-right-way"><a href="https://i.ritzastatic.com/learn-python-the-right-way/learn-python-the-right-way.pdf">Learn Python the Right Way</a></a></h3>
+<ul>
+<li>PDF图书</li>
+</ul>
+<h3 id="timeout-a-command-in-bash-without-unnecessary-delay"><a class="header" href="#timeout-a-command-in-bash-without-unnecessary-delay"><a href="https://stackoverflow.com/questions/687948/timeout-a-command-in-bash-without-unnecessary-delay">Timeout a command in bash without unnecessary delay</a></a></h3>
+<ul>
+<li>命令行工具timeout使用方法</li>
+</ul>
+<h3 id="linux查看动态库程序依赖的库"><a class="header" href="#linux查看动态库程序依赖的库"><a href="https://blog.csdn.net/mayue_web/article/details/104019036">linux查看动态库/程序依赖的库</a></a></h3>
+<ul>
+<li>objdump -x xxx.so | grep NEEDED</li>
+<li>readelf -d xxx.so</li>
+<li>ldd xxx.so</li>
+<li>lsof xxx.so</li>
+</ul>
+<h3 id="云盘搜索引擎"><a class="header" href="#云盘搜索引擎"><a href="http://www.de56.com/type/mp3?p=8">云盘搜索引擎</a></a></h3>
+<ul>
+<li>可以搜索音乐,不确定什么时候会失效</li>
+</ul>
+<h3 id="httpyinyuetw"><a class="header" href="#httpyinyuetw"><a href="http://yinyue.tw/">http://yinyue.tw/</a></a></h3>
+<ul>
+<li>一个音乐播放网站,歌曲都偏经典</li>
+</ul>
+<h3 id="upgrade-docker-on-centos-7"><a class="header" href="#upgrade-docker-on-centos-7"><a href="https://stackoverflow.com/questions/26472586/upgrade-docker-on-centos-7">Upgrade docker on CentOS 7</a></a></h3>
+<pre><code>sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux  docker-engine-selinux docker-engine
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+
+
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
+</code></pre>
+<h3 id="privacy-preserving-machine-learning"><a class="header" href="#privacy-preserving-machine-learning"><a href="https://salttiger.com/privacy-preserving-machine-learning/">Privacy-Preserving Machine Learning</a></a></h3>
+<ul>
+<li>隐私及算法</li>
+</ul>
+<h3 id="the-c-standard-library"><a class="header" href="#the-c-standard-library"><a href="https://salttiger.com/the-cpp-standard-library/">The C++ Standard Library</a></a></h3>
+<ul>
+<li>C++标准库的实现</li>
+</ul>
+<h3 id="grpc-ui"><a class="header" href="#grpc-ui"><a href="https://github.com/fullstorydev/grpcui">gRPC UI</a></a></h3>
+<ul>
+<li>grpc调试时候的息屏没有实现</li>
+</ul>
+<h3 id="一名c程序员的rust入门初体验"><a class="header" href="#一名c程序员的rust入门初体验"><a href="https://mp.weixin.qq.com/s/lTaQKCTY3z4MdPhGJWX1Ng">一名C++程序员的Rust入门初体验</a></a></h3>
+<ul>
+<li>rust和cpp的区别</li>
+</ul>
+<h3 id="linux如何查看内存ddr几代如何通过命令查看内存是ddr2还是ddr3的"><a class="header" href="#linux如何查看内存ddr几代如何通过命令查看内存是ddr2还是ddr3的"><a href="https://blog.csdn.net/weixin_36086032/article/details/116646166">linux如何查看内存ddr几代,如何通过命令查看内存是ddr2还是ddr3的？</a></a></h3>
+<ul>
+<li>命令: sudo dmidecode -t memory</li>
+</ul>
+<h3 id="rrgithub"><a class="header" href="#rrgithub"><a href="https://github.com/rr-debugger/rr/wiki/Building-And-Installing#tldr">rr@github</a></a></h3>
+<ul>
+<li>linux代码复现工具, 类似于GDB</li>
+</ul>
+<h3 id="linux查看物理cpu个数核数逻辑cpu个数"><a class="header" href="#linux查看物理cpu个数核数逻辑cpu个数"><a href="https://www.cnblogs.com/emanlee/p/3587571.html">Linux查看物理CPU个数、核数、逻辑CPU个数</a></a></h3>
+<ul>
+<li>CPU个数: cat /proc/cpuinfo| grep &quot;physical id&quot;| sort| uniq| wc -l</li>
+<li>物理核: cat /proc/cpuinfo| grep &quot;cpu cores&quot;| uniq</li>
+<li>逻辑核: cat /proc/cpuinfo| grep &quot;processor&quot;| wc -l</li>
+<li>CPU型号: cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c</li>
+<li>内存信息: cat /proc/meminfo</li>
+<li>内核版本: uname -a, cat /proc/version</li>
+<li>机器型号: dmidecode | grep &quot;Product Name&quot;</li>
+<li>系统版本: cat /etc/redhat-release, lsb_release -a, cat  /etc/issue</li>
+<li>CPU信息: cat /proc/cpuinfo</li>
+<li>内存信息: cat /proc/meminfo</li>
+</ul>
+<h3 id="how-to-create-a-python-package-in-2022"><a class="header" href="#how-to-create-a-python-package-in-2022"><a href="https://mathspp.com/blog/how-to-create-a-python-package-in-2022">How to create a Python package in 2022</a></a></h3>
+<ul>
+<li>python包构建规则, 还有一个<a href="https://github.com/pypa/pip-audit/blob/main/pyproject.toml">实例</a></li>
+</ul>
+<h3 id="karmem"><a class="header" href="#karmem"><a href="https://github.com/inkeliz/karmem">KARMEM</a></a></h3>
+<ul>
+<li>序列化库, 比flatten buffer快10倍</li>
+</ul>
+<h3 id="cpu-specs-database"><a class="header" href="#cpu-specs-database"><a href="https://www.techpowerup.com/cpu-specs/">CPU Specs Database</a></a></h3>
+<ul>
+<li>消费级CPU spec信息, 另外还有<a href="https://www.techpowerup.com/gpu-specs/">GPU</a>, <a href="https://www.techpowerup.com/ssd-specs/">SSD</a>等</li>
+</ul>
+<h3 id="imhex"><a class="header" href="#imhex"><a href="https://github.com/WerWolv/ImHex">Imhex</a></a></h3>
+<ul>
+<li>二进制文件查看</li>
+</ul>
+<h3 id="userver"><a class="header" href="#userver"><a href="https://github.com/userver-framework/userver">userver</a></a></h3>
+<ul>
+<li>异步微服务框架</li>
+</ul>
+<h3 id="打造程序员完美的终端环境颜值爆表效率-x-10倍"><a class="header" href="#打造程序员完美的终端环境颜值爆表效率-x-10倍"><a href="https://vikingz.me/best-terminal-setup/?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">打造程序员完美的终端环境，颜值爆表，效率 X 10倍</a></a></h3>
+<ul>
+<li>学习配置iterm2环境</li>
+</ul>
+<h3 id="excellent-free-resource-for-programmers-code-simplicity"><a class="header" href="#excellent-free-resource-for-programmers-code-simplicity"><a href="https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">Excellent Free Resource For Programmers: Code Simplicity</a></a></h3>
+<ul>
+<li>程序员资料</li>
+</ul>
+<h3 id="does-a-compiler-use-all-x86-instructions"><a class="header" href="#does-a-compiler-use-all-x86-instructions"><a href="http://pepijndevos.nl/2016/08/24/x86-instruction-distribution.html?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">Does a compiler use all x86 instructions?</a></a></h3>
+<ul>
+<li>查看编译器命令情况</li>
+</ul>
+<h3 id="all-you-need-is-arxiv-search"><a class="header" href="#all-you-need-is-arxiv-search"><a href="https://github.com/goodnlp/all-you-need-is-arxiv-search">all-you-need-is-arxiv-search</a></a></h3>
+<ul>
+<li>arxiv搜索工具, 网站在<a href="https://www.arxiv.dev/">这里</a></li>
+</ul>
+<h2 id="生活杂谈"><a class="header" href="#生活杂谈">生活杂谈</a></h2>
+<h3 id="snia-computememorystorage-summit"><a class="header" href="#snia-computememorystorage-summit"><a href="https://www.snia.org/cms-summit">SNIA Compute+Memory+Storage Summit</a></a></h3>
+<ul>
+<li>存储领域峰会, 23年4月11~12日</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2023-04-15.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="2023-04-01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2023-04-15.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="2023-04-01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

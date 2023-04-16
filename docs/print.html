@@ -1,0 +1,1069 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>福来鸽的网络收纳盒[周更版]</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="2023-04-15.html"><strong aria-hidden="true">1.</strong> 2023年04月15日</a></li><li class="chapter-item expanded "><a href="2023-04-08.html"><strong aria-hidden="true">2.</strong> 2023年04月08日</a></li><li class="chapter-item expanded "><a href="2023-04-01.html"><strong aria-hidden="true">3.</strong> 2023年04月01日</a></li><li class="chapter-item expanded "><a href="2023-03-11.html"><strong aria-hidden="true">4.</strong> 2023年03月11日</a></li><li class="chapter-item expanded "><a href="2023-03-04.html"><strong aria-hidden="true">5.</strong> 2023年03月04日</a></li><li class="chapter-item expanded "><a href="2023-02-25.html"><strong aria-hidden="true">6.</strong> 2023年02月25日</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">福来鸽的网络收纳盒[周更版]</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="2022年04月15日第6期"><a class="header" href="#2022年04月15日第6期">2022年04月15日第6期</a></h1>
+<h2 id="每周更新"><a class="header" href="#每周更新">每周更新</a></h2>
+<p>本周的专家访谈谈的居然是微软, 投行的朋友们对这个赛道可是很关注啊
+<a href="https://mp.weixin.qq.com/s/77ZU5YM9i-NCX9qklT8vWg?v_p=90&amp;WBAPIAnalysisOriUICodes=0_10000198_10000002&amp;launchid=default&amp;wm=3333_2001&amp;aid=01A2GUVvCiJ0bN45VH0AOVftc20OVPaYUZmVa1h1s_8-8xrdg.&amp;from=10D4093010">微软大中华区专家交流纪要</a></p>
+<h2 id="硬件加速"><a class="header" href="#硬件加速">硬件加速</a></h2>
+<p><a href="https://huggingface.co/blog/stable-diffusion-inference-intel">Accelerating Stable Diffusion Inference on Intel CPUs</a></p>
+<ul>
+<li>在Intel的最新CPU上居然也能实现秒级的SD推理, Optimum Intel核OpenVINO的优化能力看起来都不错呀.</li>
+</ul>
+<p><a href="https://news.ycombinator.com/item?id=35301447">What we know about the Apple Neural Engine</a></p>
+<ul>
+<li>Apple Neural Engine的一些猜测</li>
+<li><a href="https://github.com/hollance/neural-engine">The Neural Engine — what do we know about it?</a></li>
+<li><a href="https://github.com/geohot/tinygrad/tree/master/accel/ane">The Apple Neural Engine</a></li>
+<li><a href="https://github.com/AsahiLinux/m1n1/pull/296/files">m1n1</a></li>
+</ul>
+<h2 id="模型算法"><a class="header" href="#模型算法">模型算法</a></h2>
+<p><a href="https://github.com/nomic-ai/gpt4all">GPT4All</a></p>
+<ul>
+<li>一个GPT框架, 资源要求低</li>
+<li>用到的技术, <a href="https://arxiv.org/pdf/2106.09685.pdf">LORA</a>, <a href="https://github.com/tloen/alpaca-lora">coda</a></li>
+</ul>
+<p><a href="https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/">Cerebras-GPT: A Family of Open, Compute-efficient, Large Language Models</a></p>
+<ul>
+<li>一组开源的GPT模型, weight/训练方法/checkpoint均已开源</li>
+</ul>
+<h2 id="计算基础"><a class="header" href="#计算基础">计算基础</a></h2>
+<p><a href="https://ieeexplore.ieee.org/document/6844459">A Top-Down method for performance analysis and counters architecture</a></p>
+<ul>
+<li>性能分析top-down方法论文, 翻译版在<a href="https://andrewei1316.github.io/2020/12/20/top-down-performance-analysis/">Andrewei's Blog</a></li>
+<li>Denis Bakhvalov的图书 <a href="https://faculty.cs.niu.edu/~winans/notes/patmc.pdf">Performance Analysis and Tuning on Modern CPUs</a>也是相同功能</li>
+</ul>
+<h2 id="实用工具"><a class="header" href="#实用工具">实用工具</a></h2>
+<p><a href="https://github.com/TabbyML/tabby">Tabby</a></p>
+<ul>
+<li>替代Copilot的开源工具</li>
+</ul>
+<p><a href="https://daily.ginger-t.link/glossary">glossary</a></p>
+<ul>
+<li>AI词汇解析</li>
+</ul>
+<p><a href="https://numpy.org/doc/1.18/numpy-user.pdf">numpy doc</a></p>
+<ul>
+<li>numpy doc pdf版</li>
+</ul>
+<p><a href="https://developer.aliyun.com/article/1041862">WSL2重启</a></p>
+<pre><code class="language-bash"># list
+wslconfig /list
+wsl --list
+wsl -l -v
+# terminate
+wsl --terminate Ubuntu
+wsl -t Ubuntu
+# shutdown
+wsl --shutdown
+# start 
+wsl
+</code></pre>
+<p><a href="https://blog.csdn.net/weixin_45579994/article/details/112386425">修改 WSL2 可用内存大小和交换分区大小</a></p>
+<ul>
+<li>在%UserProfile%创建.wslconfig后重启wsl</li>
+</ul>
+<pre><code>[wsl2]
+memory=2GB
+swap=4GB
+localhostForwarding=true
+</code></pre>
+<h2 id="生活杂谈"><a class="header" href="#生活杂谈">生活杂谈</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022年04月08日第5期"><a class="header" href="#2022年04月08日第5期">2022年04月08日第5期</a></h1>
+<p>上周推特开源了其推荐算法,火起来的只有twitter对阿龙的特殊对待, 不知道有多少人看了内部的细节.</p>
+<p>谷歌公开了TPU v4的一些细节, 看起来这两年, intel被AMD挤了好大一管牙膏, Google也要被OpenAI挤牙膏喽.</p>
+<h2 id="硬件加速-1"><a class="header" href="#硬件加速-1">硬件加速</a></h2>
+<h3 id="陈巍谈芯3上-gpgpu流式多处理器架构之取指译码发射gpgpu-芯片设计原理与实践节选"><a class="header" href="#陈巍谈芯3上-gpgpu流式多处理器架构之取指译码发射gpgpu-芯片设计原理与实践节选"><a href="https://zhuanlan.zhihu.com/p/572302589?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1626489285682606080&amp;utm_source=ZHShareTargetIDMore">陈巍谈芯：3（上） GPGPU流式多处理器架构之取指译码发射——《GPGPU 芯片设计：原理与实践》节选</a></a></h3>
+<ul>
+<li>GPGPU硬件原理系列, 讲解比较深刻, <a href="https://www.zhihu.com/column/c_1480197764110303232">GPGPU 芯片设计：原理与实践</a>专栏和<a href="https://www.zhihu.com/people/chenweiphd/posts?page=3">陈巍谈芯</a>值得关注</li>
+</ul>
+<h3 id="colossal-ai-and-intel-partner-to-deliver-cost-efficient-open-source-solution-for-protein-folding-structure-prediction-with-habana-gaudi-processors"><a class="header" href="#colossal-ai-and-intel-partner-to-deliver-cost-efficient-open-source-solution-for-protein-folding-structure-prediction-with-habana-gaudi-processors"><a href="https://www.hpc-ai.tech/blog/intel-habana">Colossal-AI and Intel® Partner to Deliver Cost-Efficient Open-Source Solution for Protein Folding Structure Prediction with Habana Gaudi Processors</a></a></h3>
+<ul>
+<li>colossal-AI和habana Gaudi的合作,比较有趣.</li>
+<li><a href="https://github.com/hpcaitech/ColossalAI#biomedicine">Colossal-AI</a>: 新兴训练框架</li>
+<li><a href="https://developer.habana.ai/resources/habana-models-performance/">Habana Gaudi Perf</a>:性能看起来不错,但是都是用bf16进行的, <a href="https://github.com/HabanaAI/Model-References/tree/master/TensorFlow/computer_vision/Resnets/resnet_keras#model-overview">Resnet</a>和<a href="https://github.com/HabanaAI/Model-References/tree/master/TensorFlow/nlp/bert">bert</a>的代码已经放出</li>
+<li><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/resources/resnet_50_v1_5_for_tensorflow/performance">Nvidia A100性能</a></li>
+</ul>
+<h3 id="megengine-tensorcore-卷积算子实现原理"><a class="header" href="#megengine-tensorcore-卷积算子实现原理"><a href="https://aijishu.com/a/1060000000206213">MegEngine TensorCore 卷积算子实现原理</a></a></h3>
+<ul>
+<li>GEMM计算的优化方法</li>
+<li>文中还提到了CUTLASS的使用: <a href="https://mp.weixin.qq.com/s?__biz=MzU4NTkwMDM1NA==&amp;mid=2247487659&amp;idx=1&amp;sn=02aa4e7242d33699158c3491eff78fe5&amp;chksm=fd82d886caf5519020d306a9a3d7e91d276678b5563cb87e24cb168328a9e2d3d7ccd675997c&amp;scene=21#wechat_redirect">黑科技：用cutlass进行低成本、高性能卷积算子定制开发</a></li>
+<li><a href="https://aijishu.com/a/1060000000202736">分享实录上篇：利用 MegEngine 分布式通信算子实现复杂的并行训练</a></li>
+<li><a href="https://aijishu.com/a/1060000000203467">分享实录下篇：利用 MegEngine 分布式通信算子实现复杂的并行训练</a></li>
+</ul>
+<h3 id="加速transformer稀疏注意力加速器调研"><a class="header" href="#加速transformer稀疏注意力加速器调研"><a href="https://www.birentech.com/Research_nstitute_details/10.html">加速Transformer：稀疏注意力加速器调研</a></a></h3>
+<ul>
+<li>壁仞关于Transformer模型长seq_lens情形下加速器的优化设计</li>
+</ul>
+<h3 id="对壁仞科技br100的fp32性能的商榷"><a class="header" href="#对壁仞科技br100的fp32性能的商榷"><a href="https://zhuanlan.zhihu.com/p/553502423">对壁仞科技BR100的FP32性能的商榷</a></a></h3>
+<ul>
+<li>对壁仞算力的分析:其中有很多时Matrix性能</li>
+</ul>
+<h3 id="hotchip-homepage"><a class="header" href="#hotchip-homepage"><a href="https://hotchips.org/">hotchip homepage</a></a></h3>
+<ul>
+<li>芯片领域的重要会议, 去年发布了很多AI芯片(看<a href="https://hc34.hotchips.org/">这里</a>)</li>
+</ul>
+<h3 id="tenstorrent的hotchips材料微博"><a class="header" href="#tenstorrent的hotchips材料微博"><a href="https://weibo.com/2144454703/MAi3jCUFH">Tenstorrent的hotchips材料@微博</a></a></h3>
+<ul>
+<li>微博芯片大佬对Tenstorrent在hotchips上演讲的总结, 有点堆多核的感觉, 想原生支持pytorch</li>
+</ul>
+<h3 id="aiot时代的编程语言编译器与指令集架构机遇挑战与技术分享"><a class="header" href="#aiot时代的编程语言编译器与指令集架构机遇挑战与技术分享"><a href="https://aijishu.com/a/1060000000392267">AIOT时代的编程语言、编译器与指令集架构：机遇、挑战与技术分享</a></a></h3>
+<ul>
+<li>AI编译器的历史现状和发展方向</li>
+</ul>
+<h3 id="arm64-mpam资源隔离特性介绍"><a class="header" href="#arm64-mpam资源隔离特性介绍"><a href="https://aijishu.com/a/1060000000393432">ARM64 MPAM资源隔离特性介绍</a></a></h3>
+<ul>
+<li>arm的隔离特性, QoS, 接近intel的RDT</li>
+<li>文中有提供一些测试的工具方法</li>
+</ul>
+<h3 id="new-amd-ryzen-cpus-intel-sapphire-rapids-rust-adoption--more-in-q1"><a class="header" href="#new-amd-ryzen-cpus-intel-sapphire-rapids-rust-adoption--more-in-q1"><a href="https://www.phoronix.com/news/Q1-2023-Recap">New AMD Ryzen CPUs, Intel Sapphire Rapids, Rust Adoption &amp; More In Q1</a></a></h3>
+<ul>
+<li>作者列举了CPU/GPU性能测评的系列文章, 有下文等:
+<ul>
+<li>CPU: <a href="https://www.phoronix.com/review/amd-ryzen9-7950x3d-linux">AMD Ryzen 9 7950X3D</a>, <a href="https://www.phoronix.com/review/ryzen-7600-7700-7900-linux">AMD Ryzen 5 7600 / Ryzen 7 7700 / Ryzen 9 7900</a>, <a href="https://www.phoronix.com/review/intel-xeon-platinum-8490h">Intel Xeon Platinum 8490H &quot;Sapphire Rapids&quot;</a></li>
+<li>GPU: <a href="https://www.phoronix.com/review/nvidia-rtx4080-rtx4090-linux">GeForce RTX 4080 and RTX 4090</a></li>
+<li>分析: <a href="https://www.phoronix.com/review/amd-7900x3d-7950x3d">AMD Ryzen 9 7900X3D and Ryzen 9 7950X3D</a>, <a href="https://www.phoronix.com/review/intel-sapphirerapids-avx512">AMD Genoa vs. Intel Sapphire Rapids &amp; Ice Lake</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="gpu-topk"><a class="header" href="#gpu-topk"><a href="https://github.com/anilshanbhag/gpu-topk">GPU-TopK</a></a></h3>
+<ul>
+<li>GPU的topk算法, 双调等</li>
+</ul>
+<h3 id="测试cpu性能planteggtwitter"><a class="header" href="#测试cpu性能planteggtwitter"><a href="https://twitter.com/plantegg/status/1643163271137226752">测试CPU性能plantegg@twitter</a></a></h3>
+<ul>
+<li><a href="https://github.com/intel/lmbench">lmbench</a>: CPU性能测试工具</li>
+<li><a href="https://mp.weixin.qq.com/s/QNgMS0gOXhZml8l_towAbw">揭秘 cache 访问延迟背后的计算机原理</a>: CPU cache性能测试方法</li>
+</ul>
+<h3 id="谷歌最强ai超算碾压英伟达a100tpu-v4性能提升10倍细节首次公开"><a class="header" href="#谷歌最强ai超算碾压英伟达a100tpu-v4性能提升10倍细节首次公开"><a href="https://mp.weixin.qq.com/s/iIJgUwCfupZZBTb_AYNuZQ">谷歌最强AI超算碾压英伟达A100！TPU v4性能提升10倍，细节首次公开</a></a></h3>
+<ul>
+<li>google TPU v4</li>
+<li><a href="https://mp.weixin.qq.com/s/iIJgUwCfupZZBTb_AYNuZQ">arxiv</a></li>
+<li>性能是A100的1.7倍, Graphcore Bow的4.x倍</li>
+</ul>
+<h3 id="大型语言模型的推理演算"><a class="header" href="#大型语言模型的推理演算"><a href="https://mp.weixin.qq.com/s/2wfUQNsH4IRuJEF39mebUQ">大型语言模型的推理演算</a></a></h3>
+<ul>
+<li>模型性能的理论计算, 十分详细, Oneflow的翻译质量很高</li>
+<li>原文在<a href="https://kipp.ly/blog/transformer-inference-arithmetic/">这里</a></li>
+</ul>
+<h3 id="读论文之基于-fpga-的并行全比较排序算法"><a class="header" href="#读论文之基于-fpga-的并行全比较排序算法"><a href="https://blog.csdn.net/Reborn_Lee/article/details/80469391">读论文之《基于 FPGA 的并行全比较排序算法》</a></a></h3>
+<ul>
+<li>FPGA的并行排序算法, 带源码</li>
+</ul>
+<h3 id="installing-aitemplate"><a class="header" href="#installing-aitemplate"><a href="https://facebookincubator.github.io/AITemplate/install/index.html">Installing AITemplate</a></a></h3>
+<ul>
+<li>AITemplate使用文档</li>
+</ul>
+<h3 id="性能之巅-第2版读书笔记第6章下-小川cdweibo"><a class="header" href="#性能之巅-第2版读书笔记第6章下-小川cdweibo"><a href="https://weibo.com/1202332555/MAj4c3Ff0">《性能之巅 第2版》读书笔记（第6章下） 小川CD@weibo</a></a></h3>
+<ul>
+<li>第六章, 博主有一个系列</li>
+</ul>
+<h2 id="模型算法-1"><a class="header" href="#模型算法-1">模型算法</a></h2>
+<h3 id="the-annotated-transformer"><a class="header" href="#the-annotated-transformer"><a href="https://nlp.seas.harvard.edu/2018/04/03/attention.html">The Annotated Transformer</a></a></h3>
+<ul>
+<li>harvardnlp, transformer经典实现</li>
+</ul>
+<h3 id="大型语言模型综述全新出炉从t5到gpt-4最全盘点国内20余位研究者联合撰写"><a class="header" href="#大型语言模型综述全新出炉从t5到gpt-4最全盘点国内20余位研究者联合撰写"><a href="https://www.jiqizhixin.com/articles/2023-04-03">大型语言模型综述全新出炉：从T5到GPT-4最全盘点，国内20余位研究者联合撰写</a></a></h3>
+<ul>
+<li>大模型综述, 论文原文在<a href="https://arxiv.org/abs/2303.18223">arxiv</a></li>
+</ul>
+<h3 id="the-algorithm"><a class="header" href="#the-algorithm"><a href="https://github.com/twitter/the-algorithm">the-algorithm</a></a></h3>
+<ul>
+<li>推特开源的推荐算法, 在<a href="https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm">官方博客</a>上也有介绍</li>
+<li>一同开源的还有<a href="https://github.com/twitter/the-algorithm-ml">the-algorithm-ml</a>, <a href="https://opensource.twitter.dev/">推特开源网站</a>也有详细介绍</li>
+</ul>
+<h3 id="deep-learning-do-it-yourself"><a class="header" href="#deep-learning-do-it-yourself"><a href="https://dataflowr.github.io/website/">Deep Learning Do It Yourself!</a></a></h3>
+<ul>
+<li>自学深度学习</li>
+</ul>
+<h3 id="hugginggpt-solving-ai-tasks-with-chatgpt-and-its-friends-in-huggingface"><a class="header" href="#hugginggpt-solving-ai-tasks-with-chatgpt-and-its-friends-in-huggingface"><a href="https://paperswithcode.com/paper/hugginggpt-solving-ai-tasks-with-chatgpt-and">HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace</a></a></h3>
+<ul>
+<li>使用GPT作为控制面, 调用huggingface的其他模型解决问题</li>
+<li>代码开源在<a href="https://github.com/microsoft/JARVIS">github</a></li>
+</ul>
+<h3 id="token-merging-for-fast-stable-diffusion"><a class="header" href="#token-merging-for-fast-stable-diffusion"><a href="https://paperswithcode.com/paper/token-merging-for-fast-stable-diffusion">Token Merging for Fast Stable Diffusion</a></a></h3>
+<ul>
+<li>Fast SD: 通过合并token减少计算量</li>
+</ul>
+<h3 id="如何评估大语言模型"><a class="header" href="#如何评估大语言模型"><a href="https://mp.weixin.qq.com/s/EKubSNjUqDRbUBkXU92hsw">如何评估大语言模型</a></a></h3>
+<ul>
+<li>大模型的评估方法和工具</li>
+</ul>
+<h3 id="极低资源条件下如何微调大模型lora模型思想与bloom-lora代码实现分析"><a class="header" href="#极低资源条件下如何微调大模型lora模型思想与bloom-lora代码实现分析"><a href="https://mp.weixin.qq.com/s/iog2jGpb2yYQnuhSW6yH4Q">极低资源条件下如何微调大模型：LoRA模型思想与BLOOM-LORA代码实现分析</a></a></h3>
+<ul>
+<li>LoRA和BLOOM的微调方式</li>
+</ul>
+<h3 id="官方教程chatglm-6b-微调最低只需-7gb-显存"><a class="header" href="#官方教程chatglm-6b-微调最低只需-7gb-显存"><a href="https://mp.weixin.qq.com/s/EnfKFMflFgIBv9fG1VGE2g">【官方教程】ChatGLM-6B 微调，最低只需 7GB 显存</a></a></h3>
+<ul>
+<li>ChatGLM</li>
+</ul>
+<h3 id="微软提出自动化神经网络训练剪枝框架oto一站式获得高性能轻量化模型"><a class="header" href="#微软提出自动化神经网络训练剪枝框架oto一站式获得高性能轻量化模型"><a href="https://mp.weixin.qq.com/s/DLuSmtS0IZ8mDsSQjPWyVQ">微软提出自动化神经网络训练剪枝框架OTO，一站式获得高性能轻量化模型</a></a></h3>
+<ul>
+<li>自动剪枝工具, MS</li>
+</ul>
+<h3 id="推出新一代npu安谋科技应战ai新时代要催化本土芯片创新"><a class="header" href="#推出新一代npu安谋科技应战ai新时代要催化本土芯片创新"><a href="https://aijishu.com/a/1060000000393744">推出新一代NPU！安谋科技应战AI新时代，要催化本土芯片创新</a></a></h3>
+<ul>
+<li>AMD的新产品</li>
+</ul>
+<h3 id="metaai提出diffmae扩散模型与mae的首次结合"><a class="header" href="#metaai提出diffmae扩散模型与mae的首次结合"><a href="https://hub.baai.ac.cn/view/25331">MetaAI提出DIFFMAE：扩散模型与MAE的首次结合</a></a></h3>
+<ul>
+<li>DIFFUSION+MAE: <a href="https://arxiv.org/pdf/2304.03283.pdf">arxiv</a></li>
+</ul>
+<h3 id="fastchat"><a class="header" href="#fastchat"><a href="https://github.com/lm-sys/FastChat">FastChat</a></a></h3>
+<ul>
+<li>小羊驼, 低成本finetune LLAMA的模型, 公开的权重delta在<a href="https://huggingface.co/lmsys/vicuna-7b-delta-v0">这里</a></li>
+</ul>
+<h2 id="计算基础-1"><a class="header" href="#计算基础-1">计算基础</a></h2>
+<h3 id="linked-lists-pointer-tricks-and-good-taste"><a class="header" href="#linked-lists-pointer-tricks-and-good-taste"><a href="https://github.com/mkirchner/linked-list-good-taste">Linked lists, pointer tricks and good taste</a></a></h3>
+<ul>
+<li>Linus对于编程品味的描述, 体现在链表的一个小问题上</li>
+</ul>
+<h3 id="everything-i-wish-i-knew-when-learning-c"><a class="header" href="#everything-i-wish-i-knew-when-learning-c"><a href="https://tmewett.com/c-tips/">Everything I wish I knew when learning C</a></a></h3>
+<ul>
+<li>C语言使用要点</li>
+</ul>
+<h3 id="右值引用与移动语义"><a class="header" href="#右值引用与移动语义"><a href="https://zhuanlan.zhihu.com/p/545494408">右值引用与移动语义</a></a></h3>
+<ul>
+<li>对右值的讨论</li>
+</ul>
+<h3 id="what-every-programmer-should-know-about-memory"><a class="header" href="#what-every-programmer-should-know-about-memory"><a href="https://akkadia.org/drepper/cpumemory.pdf?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">What Every Programmer Should Know About Memory</a></a></h3>
+<ul>
+<li>内存知识</li>
+</ul>
+<h3 id="存储分布式存储引擎等领域论文阅读笔记索引"><a class="header" href="#存储分布式存储引擎等领域论文阅读笔记索引"><a href="https://github.com/lichuang/storage-paper-reading-cn">存储（分布式、存储引擎等）领域论文阅读笔记索引</a></a></h3>
+<ul>
+<li>存储领域论文清单</li>
+</ul>
+<h2 id="实用工具-1"><a class="header" href="#实用工具-1">实用工具</a></h2>
+<h3 id="matplotlib-cheatsheet"><a class="header" href="#matplotlib-cheatsheet"><a href="https://github.com/matplotlib/cheatsheets">matplotlib cheatsheet</a></a></h3>
+<ul>
+<li>PDF版本</li>
+</ul>
+<h3 id="python-environment-variables"><a class="header" href="#python-environment-variables"><a href="https://docs.python.org/3/using/cmdline.html#environment-variables">Python Environment variables</a></a></h3>
+<ul>
+<li>python的环境变量: PYTHONPATH, PYTHONHOME</li>
+</ul>
+<h3 id="learn-python-the-right-way"><a class="header" href="#learn-python-the-right-way"><a href="https://i.ritzastatic.com/learn-python-the-right-way/learn-python-the-right-way.pdf">Learn Python the Right Way</a></a></h3>
+<ul>
+<li>PDF图书</li>
+</ul>
+<h3 id="timeout-a-command-in-bash-without-unnecessary-delay"><a class="header" href="#timeout-a-command-in-bash-without-unnecessary-delay"><a href="https://stackoverflow.com/questions/687948/timeout-a-command-in-bash-without-unnecessary-delay">Timeout a command in bash without unnecessary delay</a></a></h3>
+<ul>
+<li>命令行工具timeout使用方法</li>
+</ul>
+<h3 id="linux查看动态库程序依赖的库"><a class="header" href="#linux查看动态库程序依赖的库"><a href="https://blog.csdn.net/mayue_web/article/details/104019036">linux查看动态库/程序依赖的库</a></a></h3>
+<ul>
+<li>objdump -x xxx.so | grep NEEDED</li>
+<li>readelf -d xxx.so</li>
+<li>ldd xxx.so</li>
+<li>lsof xxx.so</li>
+</ul>
+<h3 id="云盘搜索引擎"><a class="header" href="#云盘搜索引擎"><a href="http://www.de56.com/type/mp3?p=8">云盘搜索引擎</a></a></h3>
+<ul>
+<li>可以搜索音乐,不确定什么时候会失效</li>
+</ul>
+<h3 id="httpyinyuetw"><a class="header" href="#httpyinyuetw"><a href="http://yinyue.tw/">http://yinyue.tw/</a></a></h3>
+<ul>
+<li>一个音乐播放网站,歌曲都偏经典</li>
+</ul>
+<h3 id="upgrade-docker-on-centos-7"><a class="header" href="#upgrade-docker-on-centos-7"><a href="https://stackoverflow.com/questions/26472586/upgrade-docker-on-centos-7">Upgrade docker on CentOS 7</a></a></h3>
+<pre><code>sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux  docker-engine-selinux docker-engine
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+
+
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
+</code></pre>
+<h3 id="privacy-preserving-machine-learning"><a class="header" href="#privacy-preserving-machine-learning"><a href="https://salttiger.com/privacy-preserving-machine-learning/">Privacy-Preserving Machine Learning</a></a></h3>
+<ul>
+<li>隐私及算法</li>
+</ul>
+<h3 id="the-c-standard-library"><a class="header" href="#the-c-standard-library"><a href="https://salttiger.com/the-cpp-standard-library/">The C++ Standard Library</a></a></h3>
+<ul>
+<li>C++标准库的实现</li>
+</ul>
+<h3 id="grpc-ui"><a class="header" href="#grpc-ui"><a href="https://github.com/fullstorydev/grpcui">gRPC UI</a></a></h3>
+<ul>
+<li>grpc调试时候的息屏没有实现</li>
+</ul>
+<h3 id="一名c程序员的rust入门初体验"><a class="header" href="#一名c程序员的rust入门初体验"><a href="https://mp.weixin.qq.com/s/lTaQKCTY3z4MdPhGJWX1Ng">一名C++程序员的Rust入门初体验</a></a></h3>
+<ul>
+<li>rust和cpp的区别</li>
+</ul>
+<h3 id="linux如何查看内存ddr几代如何通过命令查看内存是ddr2还是ddr3的"><a class="header" href="#linux如何查看内存ddr几代如何通过命令查看内存是ddr2还是ddr3的"><a href="https://blog.csdn.net/weixin_36086032/article/details/116646166">linux如何查看内存ddr几代,如何通过命令查看内存是ddr2还是ddr3的？</a></a></h3>
+<ul>
+<li>命令: sudo dmidecode -t memory</li>
+</ul>
+<h3 id="rrgithub"><a class="header" href="#rrgithub"><a href="https://github.com/rr-debugger/rr/wiki/Building-And-Installing#tldr">rr@github</a></a></h3>
+<ul>
+<li>linux代码复现工具, 类似于GDB</li>
+</ul>
+<h3 id="linux查看物理cpu个数核数逻辑cpu个数"><a class="header" href="#linux查看物理cpu个数核数逻辑cpu个数"><a href="https://www.cnblogs.com/emanlee/p/3587571.html">Linux查看物理CPU个数、核数、逻辑CPU个数</a></a></h3>
+<ul>
+<li>CPU个数: cat /proc/cpuinfo| grep &quot;physical id&quot;| sort| uniq| wc -l</li>
+<li>物理核: cat /proc/cpuinfo| grep &quot;cpu cores&quot;| uniq</li>
+<li>逻辑核: cat /proc/cpuinfo| grep &quot;processor&quot;| wc -l</li>
+<li>CPU型号: cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c</li>
+<li>内存信息: cat /proc/meminfo</li>
+<li>内核版本: uname -a, cat /proc/version</li>
+<li>机器型号: dmidecode | grep &quot;Product Name&quot;</li>
+<li>系统版本: cat /etc/redhat-release, lsb_release -a, cat  /etc/issue</li>
+<li>CPU信息: cat /proc/cpuinfo</li>
+<li>内存信息: cat /proc/meminfo</li>
+</ul>
+<h3 id="how-to-create-a-python-package-in-2022"><a class="header" href="#how-to-create-a-python-package-in-2022"><a href="https://mathspp.com/blog/how-to-create-a-python-package-in-2022">How to create a Python package in 2022</a></a></h3>
+<ul>
+<li>python包构建规则, 还有一个<a href="https://github.com/pypa/pip-audit/blob/main/pyproject.toml">实例</a></li>
+</ul>
+<h3 id="karmem"><a class="header" href="#karmem"><a href="https://github.com/inkeliz/karmem">KARMEM</a></a></h3>
+<ul>
+<li>序列化库, 比flatten buffer快10倍</li>
+</ul>
+<h3 id="cpu-specs-database"><a class="header" href="#cpu-specs-database"><a href="https://www.techpowerup.com/cpu-specs/">CPU Specs Database</a></a></h3>
+<ul>
+<li>消费级CPU spec信息, 另外还有<a href="https://www.techpowerup.com/gpu-specs/">GPU</a>, <a href="https://www.techpowerup.com/ssd-specs/">SSD</a>等</li>
+</ul>
+<h3 id="imhex"><a class="header" href="#imhex"><a href="https://github.com/WerWolv/ImHex">Imhex</a></a></h3>
+<ul>
+<li>二进制文件查看</li>
+</ul>
+<h3 id="userver"><a class="header" href="#userver"><a href="https://github.com/userver-framework/userver">userver</a></a></h3>
+<ul>
+<li>异步微服务框架</li>
+</ul>
+<h3 id="打造程序员完美的终端环境颜值爆表效率-x-10倍"><a class="header" href="#打造程序员完美的终端环境颜值爆表效率-x-10倍"><a href="https://vikingz.me/best-terminal-setup/?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">打造程序员完美的终端环境，颜值爆表，效率 X 10倍</a></a></h3>
+<ul>
+<li>学习配置iterm2环境</li>
+</ul>
+<h3 id="excellent-free-resource-for-programmers-code-simplicity"><a class="header" href="#excellent-free-resource-for-programmers-code-simplicity"><a href="https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">Excellent Free Resource For Programmers: Code Simplicity</a></a></h3>
+<ul>
+<li>程序员资料</li>
+</ul>
+<h3 id="does-a-compiler-use-all-x86-instructions"><a class="header" href="#does-a-compiler-use-all-x86-instructions"><a href="http://pepijndevos.nl/2016/08/24/x86-instruction-distribution.html?continueFlag=15536bed1e034a7d436f2d0584e6fa6b">Does a compiler use all x86 instructions?</a></a></h3>
+<ul>
+<li>查看编译器命令情况</li>
+</ul>
+<h3 id="all-you-need-is-arxiv-search"><a class="header" href="#all-you-need-is-arxiv-search"><a href="https://github.com/goodnlp/all-you-need-is-arxiv-search">all-you-need-is-arxiv-search</a></a></h3>
+<ul>
+<li>arxiv搜索工具, 网站在<a href="https://www.arxiv.dev/">这里</a></li>
+</ul>
+<h2 id="生活杂谈-1"><a class="header" href="#生活杂谈-1">生活杂谈</a></h2>
+<h3 id="snia-computememorystorage-summit"><a class="header" href="#snia-computememorystorage-summit"><a href="https://www.snia.org/cms-summit">SNIA Compute+Memory+Storage Summit</a></a></h3>
+<ul>
+<li>存储领域峰会, 23年4月11~12日</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022年04月01日第4期"><a class="header" href="#2022年04月01日第4期">2022年04月01日第4期</a></h1>
+<h2 id="大模型是ai发展的新一波浪潮"><a class="header" href="#大模型是ai发展的新一波浪潮">大模型是AI发展的新一波浪潮</a></h2>
+<p>最近国内的AIGC又开始大火起来了,以Diffusion为基础的图像生成模型和ChatGPT/LLAMA文字大模型已经展现出了十分惊人的生成能力了, 但是他们对算力的需求由十分高, 带动了Nvidia/寒武纪等诸多算力提供商的股价上涨, 也有人说,通用人工智能的未来已来.</p>
+<h2 id="硬件加速-2"><a class="header" href="#硬件加速-2">硬件加速</a></h2>
+<h3 id="fine-tune-flan-t5-xlxxl-using-deepspeed--hugging-face-transformers"><a class="header" href="#fine-tune-flan-t5-xlxxl-using-deepspeed--hugging-face-transformers"><a href="https://www.philschmid.de/fine-tune-flan-t5-deepspeed">Fine-tune FLAN-T5 XL/XXL using DeepSpeed &amp; Hugging Face Transformers</a></a></h3>
+<ul>
+<li>deepspeed的使用方法实例</li>
+</ul>
+<h3 id="the-technology-behind-bloom-training"><a class="header" href="#the-technology-behind-bloom-training"><a href="https://huggingface.co/blog/bloom-megatron-deepspeed">The Technology Behind BLOOM Training</a></a></h3>
+<ul>
+<li>大模型的训练方法,<a href="https://mp.weixin.qq.com/s/-q9opkoAomd9LZL9phm8bA">中文翻译版</a></li>
+<li>Deepspeed + Megatron LM
+<ul>
+<li>ZeRO数据并行</li>
+<li>Megatron-LM张量并行</li>
+<li>pipeline并行</li>
+<li>BF16优化器: <strong>FP16不适合做大模型优化</strong></li>
+<li>CUDA融合核函数</li>
+<li>训练集打乱重排</li>
+<li>嵌入layernorm</li>
+<li>AliBi位置编码</li>
+</ul>
+</li>
+<li>本文内容比较全面,可以作为大模型训练的一个范式</li>
+</ul>
+<h3 id="万字长文想训大模型这里有一份避坑指南"><a class="header" href="#万字长文想训大模型这里有一份避坑指南"><a href="https://hub.baai.ac.cn/view/25052">万字长文：想训大模型？这里有一份避坑指南</a></a></h3>
+<ul>
+<li>大模型训练的一些讨论, 仅供参考</li>
+</ul>
+<h3 id="serge---llama-made-easy"><a class="header" href="#serge---llama-made-easy"><a href="https://github.com/nsarrazin/serge">Serge - LLaMa made easy</a></a></h3>
+<ul>
+<li>基于llama.cpp的llama接口应用,要求4G内存</li>
+</ul>
+<h3 id="fidelityfx-super-resolution-22-fsr-22"><a class="header" href="#fidelityfx-super-resolution-22-fsr-22"><a href="https://github.com/GPUOpen-Effects/FidelityFX-FSR2">FidelityFX Super Resolution 2.2 (FSR 2.2)</a></a></h3>
+<ul>
+<li>AMD的超分应用库</li>
+</ul>
+<h3 id="apple-neural-engine-ane-transformers"><a class="header" href="#apple-neural-engine-ane-transformers"><a href="https://github.com/apple/ml-ane-transformers">Apple Neural Engine (ANE) Transformers</a></a></h3>
+<ul>
+<li>为apple优化的transformer</li>
+</ul>
+<h2 id="模型算法-2"><a class="header" href="#模型算法-2">模型算法</a></h2>
+<h3 id="what-is-chatgpt-doing--and-why-does-it-work"><a class="header" href="#what-is-chatgpt-doing--and-why-does-it-work"><a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/">What Is ChatGPT Doing … and Why Does It Work?</a></a></h3>
+<ul>
+<li>介绍chatGPT的结构和作用, 由于模型并未开源和公开,所以讲的内容都比较基础,可以作为模型算法入门的入门材料.</li>
+</ul>
+<h3 id="gpt35-turbo-pgvectorgithub"><a class="header" href="#gpt35-turbo-pgvectorgithub"><a href="https://github.com/gannonh/gpt3.5-turbo-pgvector">gpt3.5-turbo-pgvector@github</a></a></h3>
+<ul>
+<li>使用GPT建立一个领域知识的应用</li>
+</ul>
+<h3 id="awesome-ai-codinggihub"><a class="header" href="#awesome-ai-codinggihub"><a href="https://github.com/wsxiaoys/awesome-ai-coding">awesome-ai-coding@gihub</a></a></h3>
+<ul>
+<li>AI Code的模型列表</li>
+</ul>
+<h3 id="awesome-gpt-4github"><a class="header" href="#awesome-gpt-4github"><a href="https://github.com/radi-cho/awesome-gpt4">Awesome GPT-4@github</a></a></h3>
+<ul>
+<li>一些GPT的论文资料和工具</li>
+</ul>
+<h3 id="position-embedding-a-detailed-explanation"><a class="header" href="#position-embedding-a-detailed-explanation"><a href="https://www.ai-contentlab.com/2023/03/position-embedding-detailed-explanation.html">Position Embedding: A Detailed Explanation</a></a></h3>
+<ul>
+<li>介绍position embedding的主要结构和功能</li>
+</ul>
+<h3 id="machine-learning-design-primer"><a class="header" href="#machine-learning-design-primer"><a href="https://github.com/ibragim-bad/machine-learning-design-primer">Machine learning design primer</a></a></h3>
+<ul>
+<li>深度学习面试资料</li>
+</ul>
+<h3 id="stable-unclipgithub"><a class="header" href="#stable-unclipgithub"><a href="https://github.com/Stability-AI/stablediffusion/blob/main/doc/UNCLIP.MD">Stable unCLIP@github</a></a></h3>
+<ul>
+<li>stable模型的新结构, unCLIP</li>
+</ul>
+<h3 id="dolly"><a class="header" href="#dolly"><a href="https://github.com/databrickslabs/dolly">Dolly</a></a></h3>
+<ul>
+<li>30分钟即可训练完成的GPT</li>
+</ul>
+<h3 id="骆驼luotuo-chinese-alpaca-lora"><a class="header" href="#骆驼luotuo-chinese-alpaca-lora"><a href="https://github.com/LC1332/Chinese-alpaca-lora">骆驼(Luotuo): Chinese-alpaca-lora</a></a></h3>
+<ul>
+<li>中文大模型,非商汤正式项目</li>
+<li>相似的还有
+<ul>
+<li><a href="https://github.com/Facico/Chinese-Vicuna">Chinese-Vicuna</a></li>
+<li><a href="https://github.com/declare-lab/flan-alpaca">Flan-Alpaca: Instruction Tuning from Humans and Machines</a></li>
+<li><a href="https://github.com/sahil280114/codealpaca">Code Alpaca: An Instruction-following LLaMA Model trained on code generation instructions</a></li>
+<li><a href="https://github.com/hikariming/alpaca_chinese_dataset">alpaca_chinese_dataset</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="新开源模型裂表telegram"><a class="header" href="#新开源模型裂表telegram"><a href="https://t.me/https1024/11324">新开源模型裂表@telegram</a></a></h3>
+<ul>
+<li>Google Bard</li>
+<li>Adobe Firefly</li>
+<li>NVIDIA Foundations</li>
+<li>Bing adds new DALL-E</li>
+<li>Opera adds AI</li>
+<li>Microsoft Loop</li>
+<li>Canva puts all the AIs in</li>
+<li>ChatGPT starts adding plugins</li>
+</ul>
+<h2 id="计算基础-2"><a class="header" href="#计算基础-2">计算基础</a></h2>
+<h3 id="聊聊系统设计中的缓存"><a class="header" href="#聊聊系统设计中的缓存"><a href="https://www.codesky.me/archives/cache-design-in-system.wind?continueFlag=89c2c28b4b68da7693b243de88eb3de8">聊聊系统设计中的缓存</a></a></h3>
+<ul>
+<li>微博@敖天羽对后端缓存设计的一些思考</li>
+</ul>
+<h2 id="实用工具-2"><a class="header" href="#实用工具-2">实用工具</a></h2>
+<h3 id="anandtech"><a class="header" href="#anandtech"><a href="https://www.anandtech.com/">anandtech</a></a></h3>
+<ul>
+<li>硬件资讯网站.</li>
+</ul>
+<h3 id="huntlygithub"><a class="header" href="#huntlygithub"><a href="https://github.com/lcomplete/huntly">huntly@github</a></a></h3>
+<ul>
+<li>本地可部署的资讯收集工具,可以收集读过的网页和RSS等</li>
+</ul>
+<h3 id="hatchgithub"><a class="header" href="#hatchgithub"><a href="https://github.com/pypa/hatch">hatch@github</a></a></h3>
+<ul>
+<li>python项目管理工具, 打包配置依赖等, 使用说明见<a href="https://hatch.pypa.io/latest/intro/">文档</a></li>
+</ul>
+<h3 id="wukong-robotgithub"><a class="header" href="#wukong-robotgithub"><a href="https://github.com/wzpan/wukong-robot">wukong-robot@github</a></a></h3>
+<ul>
+<li>接入小爱同学的方式, 没有提供硬件连接的方式</li>
+</ul>
+<h3 id="ripgrep-rggithub"><a class="header" href="#ripgrep-rggithub"><a href="https://github.com/BurntSushi/ripgrep">ripgrep (rg)@github</a></a></h3>
+<ul>
+<li>grep的替代工具, 使用时命令为<strong>rg</strong></li>
+</ul>
+<h3 id="donut---document-understanding-transformer"><a class="header" href="#donut---document-understanding-transformer"><a href="https://github.com/clovaai/donut">Donut 🍩 : Document Understanding Transformer</a></a></h3>
+<ul>
+<li>使用transformer直接做ocr</li>
+</ul>
+<h2 id="生活杂谈-2"><a class="header" href="#生活杂谈-2">生活杂谈</a></h2>
+<h3 id="百度ai专家关于文心一言采购ai芯片的一些交流"><a class="header" href="#百度ai专家关于文心一言采购ai芯片的一些交流"><a href="https://zhuanlan.zhihu.com/p/615090047?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1622960178810355712&amp;utm_source=ZHShareTargetIDMore">百度AI专家关于文心一言采购AI芯片的一些交流</a></a></h3>
+<ul>
+<li>百度的座谈,以pr寒武纪为主, 也有一些有趣的信息</li>
+<li>推理主要考虑INT8算力,选择互联网/AI独角兽/芯片厂商各一家, 阿里性能好通用性低, 寒武纪,燧原和昆仑芯一般,依图最差</li>
+<li>训练主要看fp16算力, 昇腾好于燧原和天数</li>
+<li>寒武纪思元590在某些情况下可以替代A100, 23年采购量约占百度的10%, 但对寒武纪的交付能力存疑</li>
+<li>百度希望三年国产化率能到50%</li>
+<li>字节GPU需求10万片</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022年03月11日第3期"><a class="header" href="#2022年03月11日第3期">2022年03月11日第3期</a></h1>
+<p>如果只收集不整理, 等到需要使用的时候也很难找到, 就脱离了收集的本意. </p>
+<p>收纳=收集+整理</p>
+<h2 id="硬件加速-3"><a class="header" href="#硬件加速-3">硬件加速</a></h2>
+<h3 id="uifgithub"><a class="header" href="#uifgithub"><a href="https://github.com/amd/UIF">UIF@github</a></a></h3>
+<ul>
+<li>AMD统一推理前端, 支持AMD CPU, GPU和FPGA</li>
+</ul>
+<h3 id="dgx-a100-review-throughput-and-hardware-summary"><a class="header" href="#dgx-a100-review-throughput-and-hardware-summary"><a href="https://www.microway.com/hpc-tech-tips/dgx-a100-review-throughput-and-hardware-summary/">DGX A100 review: Throughput and Hardware Summary</a></a></h3>
+<ul>
+<li>DGX A100的详细硬件描述, 包含硬件连接和主要参数</li>
+</ul>
+<h3 id="青桥如何学习cuda编程zhihu"><a class="header" href="#青桥如何学习cuda编程zhihu"><a href="https://www.zhihu.com/question/62996995/answer/2888755233?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1615709097168404480&amp;utm_source=ZHShareTargetIDMore">青桥​:如何学习cuda编程？@zhihu</a></a></h3>
+<ul>
+<li>cuda环境配置<a href="https://blog.csdn.net/chen565884393/article/details/127905428">CSDN</a></li>
+<li>cuda by example: 图书和代码 <a href="https://rec.ustc.edu.cn/share/73b882a0-aa27-11ed-ae78-4d66dac20831">网盘</a></li>
+<li>cuda权威编程指南: <a href="https://rec.ustc.edu.cn/share/256d2ed0-aa28-11ed-8e4d-cd56030fc8f3">PDF</a></li>
+</ul>
+<h3 id="第二章gpu硬件构架zhihu"><a class="header" href="#第二章gpu硬件构架zhihu"><a href="https://zhuanlan.zhihu.com/p/609787347?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1615708943480479745&amp;utm_source=ZHShareTargetIDMore">第二章/GPU硬件构架@zhihu</a></a></h3>
+<ul>
+<li>Nvidia GPU硬件基础</li>
+</ul>
+<h3 id="patch-0007-risc-v-add-auto-vectorization-support"><a class="header" href="#patch-0007-risc-v-add-auto-vectorization-support"><a href="https://gcc.gnu.org/pipermail/gcc-patches/2023-March/613260.html">[PATCH 00/07] RISC-V: Add auto-vectorization support</a></a></h3>
+<ul>
+<li>RISC-V的自动向量化支持patch代码</li>
+</ul>
+<h3 id="gpu-优化技术-opencl-kernel-开发"><a class="header" href="#gpu-优化技术-opencl-kernel-开发"><a href="https://aijishu.com/a/1060000000352788">GPU 优化技术-OpenCL kernel 开发</a></a></h3>
+<ul>
+<li>openCL</li>
+</ul>
+<h3 id="详解-nvidia-h100-transformerengine"><a class="header" href="#详解-nvidia-h100-transformerengine"><a href="https://aijishu.com/a/1060000000362211">详解 NVIDIA H100 TransformerEngine</a></a></h3>
+<ul>
+<li>H100 硬件结构分析</li>
+</ul>
+<h3 id="ai芯片高性能卷积计算中的数据复用"><a class="header" href="#ai芯片高性能卷积计算中的数据复用"><a href="https://www.cnblogs.com/sea-wind/p/11421688.html">AI芯片：高性能卷积计算中的数据复用</a></a></h3>
+<ul>
+<li>卷积的算法加速及硬件实现</li>
+<li><a href="https://www.cnblogs.com/sea-wind/p/12452725.html">矩阵乘法加速器的设计框架</a></li>
+<li><a href="https://www.cnblogs.com/sea-wind/p/11767969.html">NVDLA中Winograd卷积的设计</a></li>
+<li><a href="https://www.cnblogs.com/sea-wind/p/11241018.html">Simple TPU的设计和性能评估</a></li>
+</ul>
+<h3 id="如何加速矩阵乘法优化gemm-cpu单线程篇"><a class="header" href="#如何加速矩阵乘法优化gemm-cpu单线程篇"><a href="https://renzibei.com/2021/06/30/optimize-gemm/">如何加速矩阵乘法——优化GEMM (CPU单线程篇)</a></a></h3>
+<ul>
+<li>CPU矩阵优化分析</li>
+</ul>
+<h2 id="模型算法-3"><a class="header" href="#模型算法-3">模型算法</a></h2>
+<h3 id="llama-dlgithub"><a class="header" href="#llama-dlgithub"><a href="https://github.com/shawwn/llama-dl">llama-dl@github</a></a></h3>
+<ul>
+<li>llama checkpoint下载</li>
+<li><code>magnet:?xt=urn:btih:b8287ebfa04f879b048d4d4404108cf3e8014352&amp;dn=LLaMA&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce</code></li>
+</ul>
+<h3 id="high-resolution-image-reconstruction-with-latent-diffusion-models-from-human-brain-activity"><a class="header" href="#high-resolution-image-reconstruction-with-latent-diffusion-models-from-human-brain-activity"><a href="https://www.biorxiv.org/content/10.1101/2022.11.18.517004v2">High-resolution image reconstruction with latent diffusion models from human brain activity</a></a></h3>
+<ul>
+<li>stable diffusion模型根据核磁共振数据能够重建图像</li>
+</ul>
+<h3 id="instructgpt介绍"><a class="header" href="#instructgpt介绍"><a href="https://aijishu.com/a/1060000000387749">InstructGPT介绍</a></a></h3>
+<ul>
+<li>论文分析</li>
+</ul>
+<h3 id="understanding-and-coding-the-self-attention-mechanism-of-large-language-models-from-scratch"><a class="header" href="#understanding-and-coding-the-self-attention-mechanism-of-large-language-models-from-scratch"><a href="https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html">Understanding and Coding the Self-Attention Mechanism of Large Language Models From Scratch</a></a></h3>
+<ul>
+<li>attention机制分析</li>
+</ul>
+<h3 id="understanding-large-language-models----a-transformative-reading-list"><a class="header" href="#understanding-large-language-models----a-transformative-reading-list"><a href="https://sebastianraschka.com/blog/2023/llm-reading-list.html">Understanding Large Language Models -- A Transformative Reading List</a></a></h3>
+<ul>
+<li>大模型论文整理</li>
+</ul>
+<h2 id="计算基础-3"><a class="header" href="#计算基础-3">计算基础</a></h2>
+<h3 id="math-cyclic-redundancy-check-yet-another-interesting-feature"><a class="header" href="#math-cyclic-redundancy-check-yet-another-interesting-feature"><a href="https://yurichev.org/CRC/">[Math] Cyclic redundancy check: yet another interesting feature</a></a></h3>
+<ul>
+<li>CRC具有线性特性: 具体分析在<a href="https://math.stackexchange.com/questions/1856341/why-is-the-crc-essentially-polynomial-division-over-gf2-linear">StackOverflow</a></li>
+<li>作者的编程数学相关的手稿<a href="https://math.recipes/Math-recipes.pdf">PDF</a></li>
+</ul>
+<h3 id="编译器优化那些事儿1slp矢量化介绍"><a class="header" href="#编译器优化那些事儿1slp矢量化介绍"><a href="https://aijishu.com/a/1060000000385757">编译器优化那些事儿（1）：SLP矢量化介绍</a></a></h3>
+<ul>
+<li>极术转载的编译器优化文章,本文是第一部分</li>
+<li><a href="https://aijishu.com/a/1060000000386007">编译器优化那些事儿（2）：常量传播</a></li>
+<li><a href="https://aijishu.com/a/1060000000386334">编译器优化那些事儿（3）：Lazy Code Motion</a></li>
+<li><a href="https://aijishu.com/a/1060000000386641">编译器优化那些事儿（4）：归纳变量</a></li>
+<li><a href="https://aijishu.com/a/1060000000388747">编译器优化那些事儿（5）：寄存器分配</a></li>
+</ul>
+<h3 id="浮点峰值的那些事"><a class="header" href="#浮点峰值的那些事"><a href="https://aijishu.com/a/1060000000376863">浮点峰值的那些事</a></a></h3>
+<ul>
+<li>浮点数性能计算,带CPU测试工具<a href="https://github.com/pigirons/cpufp">cpufp@github</a></li>
+</ul>
+<h3 id="自制深度学习推理框架-前言-第一课"><a class="header" href="#自制深度学习推理框架-前言-第一课"><a href="https://aijishu.com/a/1060000000375779">自制深度学习推理框架-前言-第一课</a></a></h3>
+<ul>
+<li>系列文章,这是第一课</li>
+</ul>
+<h3 id="tvm-学习指南个人版上"><a class="header" href="#tvm-学习指南个人版上"><a href="https://aijishu.com/a/1060000000350384#item-2-1">TVM 学习指南（个人版）上</a></a></h3>
+<ul>
+<li><a href="https://aijishu.com/a/1060000000350440">TVM 学习指南（个人版）下</a></li>
+</ul>
+<h3 id="自制深度学习推理框架-前言-第一课-1"><a class="header" href="#自制深度学习推理框架-前言-第一课-1"><a href="https://aijishu.com/a/1060000000375779">自制深度学习推理框架-前言-第一课</a></a></h3>
+<ul>
+<li><a href="https://aijishu.com/a/1060000000376590">自制深度学习推理框架-张量类Tensor的实现-第二课</a></li>
+<li><a href="https://aijishu.com/a/1060000000376797">自制深度学习推理框架-实现我们的第一个算子Relu-第三课</a></li>
+<li>未完待续</li>
+<li>代码实现在<a href="https://github.com/zjhellofss/KuiperInfer">KuiperInfer@github</a>, b站讲解在<a href="https://www.bilibili.com/video/BV1HV4y1A7H8/?vd_source=174953c3657af6bc2e1af4806ef6c667">我是傅傅猪@bilibili</a></li>
+</ul>
+<h3 id="usenix-srecon-apac-2022-computing-performance-whats-on-the-horizon"><a class="header" href="#usenix-srecon-apac-2022-computing-performance-whats-on-the-horizon"><a href="https://www.brendangregg.com/blog/2023-03-01/computer-performance-future-2022.html">USENIX SREcon APAC 2022: Computing Performance: What's on the Horizon</a></a></h3>
+<ul>
+<li>Brendan Gregg在USENIX上的演讲,主要讲2023年以后计算机各领域的发展趋势, 视频在<a href="https://www.youtube.com/watch?v=zGSQdN2X_k0">youtube</a>, ppt在<a href="https://www.brendangregg.com/Slides/SREcon2022_ComputingPerformance.pdf">blog</a></li>
+<li>作者是<a href="https://raw.githubusercontent.com/wuzhouhui/misc/master/Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf">Systems Performance: Enterprise and the Cloud, 2nd Edition</a>的作者</li>
+</ul>
+<h2 id="实用工具-3"><a class="header" href="#实用工具-3">实用工具</a></h2>
+<h3 id="cv_emuluategithub"><a class="header" href="#cv_emuluategithub"><a href="https://github.com/hongtaoh/cv_emulate">cv_emuluate@github</a></a></h3>
+<ul>
+<li>简历模板</li>
+</ul>
+<h3 id="compose-examplesgithub"><a class="header" href="#compose-examplesgithub"><a href="https://github.com/Haxxnet/Compose-Examples">Compose-Examples@github</a></a></h3>
+<ul>
+<li>docker用例</li>
+</ul>
+<h3 id="part-1-how-to-approach-a-system-design-interview"><a class="header" href="#part-1-how-to-approach-a-system-design-interview"><a href="https://interviewing.io/guides/system-design-interview">Part 1: How to approach a system design interview</a></a></h3>
+<ul>
+<li>面试</li>
+</ul>
+<h3 id="译-borgomegak8sgoogle-十年三代容器管理系统的设计与思考acm-2016"><a class="header" href="#译-borgomegak8sgoogle-十年三代容器管理系统的设计与思考acm-2016"><a href="http://arthurchiao.art/blog/borg-omega-k8s-zh/">[译] Borg、Omega、K8s：Google 十年三代容器管理系统的设计与思考（ACM, 2016）</a></a></h3>
+<ul>
+<li>k8s及其前辈的历史</li>
+</ul>
+<h3 id="很抱歉onenote-正在清理上次打开之后的内容请稍后"><a class="header" href="#很抱歉onenote-正在清理上次打开之后的内容请稍后"><a href="http://cn.onenotegem.com/a/addins/fix-one.html">很抱歉，OneNote 正在清理上次打开之后的内容。请稍后。</a></a></h3>
+<ul>
+<li>OneNote问题解决工具</li>
+</ul>
+<h2 id="生活杂谈-3"><a class="header" href="#生活杂谈-3">生活杂谈</a></h2>
+<h3 id="微彰琦谈荐书weibo"><a class="header" href="#微彰琦谈荐书weibo"><a href="https://weibo.com/1102141664/MvSLSb7IM">微彰琦谈:荐书@weibo</a></a></h3>
+<ul>
+<li>世界舞台上的国际政治</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022年3月4日第2期"><a class="header" href="#2022年3月4日第2期">2022年3月4日第2期</a></h1>
+<h2 id="硬件加速-4"><a class="header" href="#硬件加速-4">硬件加速</a></h2>
+<h3 id="colossal-ai-让ai大模型更低成本方便易用高效扩展"><a class="header" href="#colossal-ai-让ai大模型更低成本方便易用高效扩展"><a href="https://github.com/hpcaitech/ColossalAI/blob/main/README-zh-Hans.md">Colossal-AI: 让AI大模型更低成本、方便易用、高效扩展</a></a></h3>
+<ul>
+<li>Colossal-AI 跑GPT类大模型的优化方法</li>
+<li><a href="https://github.com/hpcaitech/ColossalAI/tree/main/applications/ChatGPT">Replicate ChatGPT Training Quickly and Affordable with Open Source Colossal-AI</a>
+<ul>
+<li>chatGPT训练教程</li>
+</ul>
+</li>
+</ul>
+<h3 id="how-to-train-really-large-models-on-many-gpus"><a class="header" href="#how-to-train-really-large-models-on-many-gpus"><a href="https://lilianweng.github.io/posts/2021-09-25-train-large/">How to Train Really Large Models on Many GPUs?</a></a></h3>
+<ul>
+<li>训练大模型的优化方法</li>
+<li>并行:数据并行/模型并行/pipline并行/tensor并行</li>
+<li>MoE模型</li>
+<li>节省CPU: CPU内存卸载/激活重计算/混合精度训练/压缩/内存高效的优化器</li>
+</ul>
+<h3 id="bytetransformer-a-high-performance-transformer-boosted-for-variable-length-inputs"><a class="header" href="#bytetransformer-a-high-performance-transformer-boosted-for-variable-length-inputs"><a href="https://arxiv.org/abs/2210.03052">ByteTransformer: A High-Performance Transformer Boosted for Variable-Length Inputs</a></a></h3>
+<ul>
+<li>Transformer变长优化</li>
+</ul>
+<h3 id="some-techniques-to-make-your-pytorch-models-train-much-faster"><a class="header" href="#some-techniques-to-make-your-pytorch-models-train-much-faster"><a href="https://sebastianraschka.com/blog/2023/pytorch-faster.html">Some Techniques To Make Your PyTorch Models Train (Much) Faster</a></a></h3>
+<ul>
+<li>pytorch训练优化方法,以蒸馏bert为例</li>
+<li>Trainer/自动混合精度/静态图编译(2.0版本)/DDP/Deepspeed</li>
+</ul>
+<h3 id="tensor_parallelgithub"><a class="header" href="#tensor_parallelgithub"><a href="https://github.com/BlackSamorez/tensor_parallel">tensor_parallel@github</a></a></h3>
+<ul>
+<li>Tensor并行实现库, 与Deepspeed/FairScale/MegatronLM/parallelformers/alpa/model.parallelize()分别对比</li>
+</ul>
+<h3 id="minkowskienginegithub"><a class="header" href="#minkowskienginegithub"><a href="https://github.com/shwoo93/MinkowskiEngine">MinkowskiEngine@github</a></a></h3>
+<ul>
+<li>sparse tensor自动微分库</li>
+</ul>
+<h3 id="meshgithub"><a class="header" href="#meshgithub"><a href="https://github.com/tensorflow/mesh">mesh@github</a></a></h3>
+<ul>
+<li>mesh-tf: 一种自动支持模型并行的tf框架</li>
+<li>主要根据T5获取<a href="https://github.com/tensorflow/mesh/blob/0cb87fe07da627bf0b7e60475d59f95ed6b5be3d/mesh_tensorflow/transformer/transformer_layers.py#L593">相对位置</a>embedding方法, 进行tensor转换</li>
+</ul>
+<h2 id="模型算法-4"><a class="header" href="#模型算法-4">模型算法</a></h2>
+<h3 id="progamming-challenges"><a class="header" href="#progamming-challenges"><a href="https://alexanderskulikov.github.io/files/toolbox_statements.pdf">Progamming Challenges</a></a></h3>
+<ul>
+<li><a href="www.coursera.org/learn/algorithmic-toolbox">Algorithmic Toolbox 课程</a></li>
+<li>课程涉及的32个编程挑战和面试问题</li>
+</ul>
+<h3 id="a-comprehensive-survey-on-pretrained-foundation-models-a-history-from-bert-to-chatgpt"><a class="header" href="#a-comprehensive-survey-on-pretrained-foundation-models-a-history-from-bert-to-chatgpt"><a href="https://arxiv.org/abs/2302.09419">A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT</a></a></h3>
+<ul>
+<li>预训练模型综述</li>
+</ul>
+<h3 id="3w字长文带你轻松入门视觉transformer"><a class="header" href="#3w字长文带你轻松入门视觉transformer"><a href="https://zhuanlan.zhihu.com/p/308301901">3W字长文带你轻松入门视觉transformer</a></a></h3>
+<ul>
+<li>Transformer的结构和实现</li>
+<li>ViT和Detr的主要原理</li>
+</ul>
+<h3 id="seq2seq-预训练语言模型bart和t5"><a class="header" href="#seq2seq-预训练语言模型bart和t5"><a href="https://zhuanlan.zhihu.com/p/420090646">Seq2Seq 预训练语言模型：BART和T5</a></a></h3>
+<ul>
+<li>BART/T5: 目标统一Bert和GPT</li>
+</ul>
+<h3 id="what-is-chatgpt-doing--and-why-does-it-work-1"><a class="header" href="#what-is-chatgpt-doing--and-why-does-it-work-1"><a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/">What Is ChatGPT Doing … and Why Does It Work?</a></a></h3>
+<ul>
+<li>chatGPT模型有效性分析</li>
+</ul>
+<h3 id="自然语言处理导论-pdf"><a class="header" href="#自然语言处理导论-pdf"><a href="https://intro-nlp.github.io/#home">自然语言处理导论</a>, <a href="https://intro-nlp.github.io/chapter/Introduction_To_NLP.pdf">PDF</a></a></h3>
+<ul>
+<li>复旦教材</li>
+</ul>
+<h3 id="machine-learning---a-first-course-for-engineers-and-scientists"><a class="header" href="#machine-learning---a-first-course-for-engineers-and-scientists"><a href="http://smlbook.org/">Machine Learning - A First Course for Engineers and Scientists</a></a></h3>
+<ul>
+<li>机器学习原理图书</li>
+<li>相关材料: <a href="https://github.com/uu-sml/course-sml-public">github</a></li>
+</ul>
+<h3 id="a-primer-in-bertology-what-we-know-about-how-bert-works"><a class="header" href="#a-primer-in-bertology-what-we-know-about-how-bert-works"><a href="https://arxiv.org/abs/2002.12327">A Primer in BERTology: What we know about how BERT works</a></a></h3>
+<ul>
+<li>Bert原理分析,论文</li>
+</ul>
+<h3 id="微博博主刘群谈chatgpt"><a class="header" href="#微博博主刘群谈chatgpt"><a href="https://github.com/liuquncn/liuquncn.github.io/blob/master/talks/20230216%20ChatGPT%20Technological%20Analysis/20230216%20ChatGPT%20Technological%20Analysis%20(public%20version).pdf">微博博主刘群谈ChatGPT</a></a></h3>
+<ul>
+<li>视频在<a href="https://video.weibo.com/show?fid=1034:4872106480173069">这里</a></li>
+<li>博主为语音语义领域专家, <a href="https://liuquncn.github.io/index_zh.html">主页</a></li>
+</ul>
+<h3 id="awesome-recommend-system-pretraining-papers"><a class="header" href="#awesome-recommend-system-pretraining-papers"><a href="https://github.com/archersama/awesome-recommend-system-pretraining-papers">awesome-recommend-system-pretraining-papers</a></a></h3>
+<ul>
+<li>推荐系统预训练模型论文列表</li>
+</ul>
+<h3 id="llamagithub"><a class="header" href="#llamagithub"><a href="https://github.com/facebookresearch/llama">llama@github</a></a></h3>
+<ul>
+<li>facebook的GPT类大模型, <a href="https://research.facebook.com/file/1574548786327032/LLaMA--Open-and-Efficient-Foundation-Language-Models.pdf">论文地址</a></li>
+</ul>
+<h3 id="lmopsgithub"><a class="header" href="#lmopsgithub"><a href="https://github.com/microsoft/LMOps">LMOps@github</a></a></h3>
+<ul>
+<li>微软生成模型研究相关材料</li>
+</ul>
+<h2 id="计算基础-4"><a class="header" href="#计算基础-4">计算基础</a></h2>
+<h3 id="rv64x开源gpu来了这次靠谱吗"><a class="header" href="#rv64x开源gpu来了这次靠谱吗"><a href="https://zhuanlan.zhihu.com/p/349060389">RV64X：开源GPU来了，这次靠谱吗？</a></a></h3>
+<ul>
+<li>基于RISC-V的开源GPU指令集介绍</li>
+</ul>
+<h3 id="ml-system-入坑指南"><a class="header" href="#ml-system-入坑指南"><a href="https://zhuanlan.zhihu.com/p/608318764?utm_medium=social&amp;utm_oi=49336847171584&amp;utm_psn=1611888916071763968&amp;utm_source=ZHShareTargetIDMore">ML system 入坑指南</a></a></h3>
+<ul>
+<li>深度学习基础知识, 可以作为教学大纲</li>
+<li>Operating System: <a href="https://jyywiki.cn/">南大JYY</a>, <a href="https://pdos.csail.mit.edu/6.828/2020/schedule.html">MIT6.S081</a>及<a href="https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/">中文笔记</a></li>
+</ul>
+<h3 id="pphc"><a class="header" href="#pphc"><a href="https://github.com/johnlui/PPHC">PPHC</a></a></h3>
+<ul>
+<li>高并发的哲学原理: 网关和负载均衡</li>
+</ul>
+<h3 id="perf-book"><a class="header" href="#perf-book"><a href="https://github.com/nnethercote/perf-book">perf-book</a></a></h3>
+<ul>
+<li>rust性能优化指南</li>
+</ul>
+<h3 id="架构治理模式"><a class="header" href="#架构治理模式"><a href="https://book.archguard.org/">架构治理模式</a></a></h3>
+<ul>
+<li>图书</li>
+</ul>
+<h3 id="how-container-networking-works-practical-explanation"><a class="header" href="#how-container-networking-works-practical-explanation"><a href="https://iximiuz.com/en/posts/container-networking-is-simple/">How Container Networking Works: Practical Explanation</a></a></h3>
+<ul>
+<li>容器网络介绍</li>
+</ul>
+<h3 id="create-your-own-compiler"><a class="header" href="#create-your-own-compiler"><a href="https://citw.dev/tutorial/create-your-own-compiler">Create Your Own Compiler</a></a></h3>
+<ul>
+<li>交互式编译器开发教程</li>
+</ul>
+<h3 id="intel-open-sources-its-opencl-cpu-based-runtime"><a class="header" href="#intel-open-sources-its-opencl-cpu-based-runtime"><a href="https://www.phoronix.com/news/Intel-OpenCL-CPU-Open-Source">Intel Open-Sources Its OpenCL CPU-Based Runtime</a></a></h3>
+<ul>
+<li>intel开源了CPU的OpenCL运行时,共几万文件, 改动文件在<a href="https://github.com/intel/llvm/pull/8216">这里</a></li>
+</ul>
+<h3 id="内核并发消杀器kcsan技术分析wechat"><a class="header" href="#内核并发消杀器kcsan技术分析wechat"><a href="https://mp.weixin.qq.com/s?__biz=MzAxMDM0NjExNA==&amp;mid=2247489000&amp;idx=1&amp;sn=80b7ed4ea7b5100c89e706c33cc3a37b&amp;v_p=90&amp;WBAPIAnalysisOriUICodes=10000001&amp;launchid=default&amp;wm=3333_2001&amp;aid=01A2GUVvCiJ0bN45VH0AOVftc20OVPaYUZmVa1h1s_8-8xrdg.&amp;from=10D2393010">内核并发消杀器（KCSAN）技术分析@wechat</a></a></h3>
+<ul>
+<li>内核功能分析</li>
+</ul>
+<h2 id="实用工具-4"><a class="header" href="#实用工具-4">实用工具</a></h2>
+<h3 id="phoronix"><a class="header" href="#phoronix"><a href="https://www.phoronix.com/">phoronix</a></a></h3>
+<ul>
+<li>Linux软硬件新闻等内容</li>
+</ul>
+<h3 id="conch"><a class="header" href="#conch"><a href="https://github.com/cmspeedrunner/conch">conch</a></a></h3>
+<ul>
+<li>windows命令行助手</li>
+</ul>
+<h3 id="cgraphgithub"><a class="header" href="#cgraphgithub"><a href="https://github.com/ChunelFeng/CGraph">CGraph@github</a></a></h3>
+<ul>
+<li>流图计算框架(非图神经网络)</li>
+</ul>
+<h3 id="cthreadpool"><a class="header" href="#cthreadpool"><a href="https://github.com/ChunelFeng/CThreadPool">CThreadPool</a></a></h3>
+<ul>
+<li>基于C++11的高效线程池实现</li>
+</ul>
+<h3 id="immichgithub"><a class="header" href="#immichgithub"><a href="https://github.com/immich-app/immich">immich@github</a></a></h3>
+<ul>
+<li>开源音视频存储方案, 自托管的Google Photo</li>
+</ul>
+<h2 id="生活杂谈-4"><a class="header" href="#生活杂谈-4">生活杂谈</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022年2月25日第1期"><a class="header" href="#2022年2月25日第1期">2022年2月25日第1期</a></h1>
+<p>如果只收集不整理, 等到需要使用的时候也很难找到, 就脱离了收集的本意. </p>
+<p>收纳=收集+整理</p>
+<h2 id="硬件加速-5"><a class="header" href="#硬件加速-5">硬件加速</a></h2>
+<h3 id="视觉大模型训练和推理加速nvidia-在-swin-transformer-的训练推理加速方法"><a class="header" href="#视觉大模型训练和推理加速nvidia-在-swin-transformer-的训练推理加速方法"><a href="%E8%A7%86%E8%A7%89%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%92%8C%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F">视觉大模型训练和推理加速</a>:NVIDIA 在 swin transformer 的训练/推理加速方法</a></h3>
+<ul>
+<li>swin带来了windows attention, 相对于ViT减少了计算量</li>
+<li>性能分析的主要流程: profiling -&gt; analyze -&gt; optimize</li>
+<li>训练主要优化点
+<ul>
+<li>混合精度矩阵计算: fp16 tensor core</li>
+<li>算子融合: 使用apex替换 fusedlayernorm, fusedadam, fMHA</li>
+<li>torch自定义算子: windows划分处理逻辑自定义算子</li>
+</ul>
+</li>
+<li>训练的其他加速方案
+<ul>
+<li>cuda graph</li>
+<li>multi stream</li>
+<li>pure fp16</li>
+<li>隐藏通信耗时</li>
+</ul>
+</li>
+<li>推理主要优化点
+<ul>
+<li>使用cublas/cudnn/cutlass优化矩阵乘</li>
+<li>算子融合: <a href="https://s6.51cto.com/oss/202301/05/c46291e585c8188e8a0846b01043ea85d04cdf.jpg">总结图片</a>
+<ul>
+<li>方式1: conv/gemm + elementwise形式直接融合: cublas/cutlass有实现</li>
+<li>方式2: conv/gemm + bias + layernorm: conv/gemm单独, bias和后面手动融合</li>
+<li>fMHA kernel, QKV gemm + bias kernel</li>
+</ul>
+</li>
+<li>矩阵乘法padding: alignment=8提升性能</li>
+<li>half2/char4格式
+<ul>
+<li>提升 memory 的带宽利用效率并降低访存指令数</li>
+<li>专有高数学指令降低 kernel 的 latency</li>
+<li>half2可以1线程处理2数据, 减少空闲线程,降低latency</li>
+</ul>
+</li>
+<li>预先开辟寄存器数组</li>
+<li>int8量化+QAT/PTQ
+<ul>
+<li>cublasLt int8矩阵乘法</li>
+<li>cublasLt支持两种数据布局: IMMA-specific+NT Gemm性能更好, 但需做更多改动; 列优先兼容性较好</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="faster-whisperctranslate2-openai-whisper调用封装和高效推理实现"><a class="header" href="#faster-whisperctranslate2-openai-whisper调用封装和高效推理实现"><a href="https://github.com/guillaumekln/faster-whisper">faster-whisper</a>/<a href="https://github.com/OpenNMT/CTranslate2/">CTranslate2</a>: OpenAI whisper调用封装和高效推理实现</a></h3>
+<ul>
+<li>faster-whisper调用CTranslate2</li>
+<li>CTranslate2: <a href="https://opennmt.net/">OpenNMT</a>产出的推理引擎, 对Transformer类模型高效优化
+<ul>
+<li>支持模型
+<ul>
+<li>Encoder-decoder models: Transformer base/big, M2M-100, NLLB, BART, mBART, Pegasus, T5, Whisper</li>
+<li>Decoder-only models: GPT-2, OPT</li>
+</ul>
+</li>
+<li>主要特性
+<ul>
+<li>多精度支持:fp16,int16,int8</li>
+<li>多架构/多核支持: arm/x86, MKL, oneDNN, Openblas等</li>
+<li>bin可以自主选择不同的CPU架构运行</li>
+<li>并行异构: CPU多核+GPU</li>
+<li>灵活的内存使用</li>
+</ul>
+</li>
+<li>OpenNMT其他产品
+<ul>
+<li><a href="https://github.com/OpenNMT/Tokenizer">Tokenizer</a></li>
+<li><a href="https://github.com/OpenNMT/adaptive-softmax">adaptive-softmax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="flexgen-大模型运行优化"><a class="header" href="#flexgen-大模型运行优化"><a href="https://github.com/FMInference/FlexGen">FlexGen</a>: 大模型运行优化</a></h3>
+<ul>
+<li>专注于超大模型单卡大batch吞吐, 放不下的效果更好</li>
+</ul>
+<h3 id="picogpt-极简gpt实现使用numpy实现gpt-2"><a class="header" href="#picogpt-极简gpt实现使用numpy实现gpt-2"><a href="https://github.com/jaymody/picoGPT">picoGPT</a>: 极简GPT实现,使用numpy实现GPT-2</a></h3>
+<h2 id="模型算法-5"><a class="header" href="#模型算法-5">模型算法</a></h2>
+<h3 id="multimodal_bigmodels_survey-多模态预训练模型综述"><a class="header" href="#multimodal_bigmodels_survey-多模态预训练模型综述"><a href="https://github.com/wangxiao5791509/MultiModal_BigModels_Survey">MultiModal_BigModels_Survey</a>: 多模态预训练模型综述</a></h3>
+<ul>
+<li>主要问题及数据集列表</li>
+<li>大模型论文列表</li>
+</ul>
+<h3 id="controlnet-受控扩散生成模型-arxiv"><a class="header" href="#controlnet-受控扩散生成模型-arxiv"><a href="https://github.com/lllyasviel/ControlNet">ControlNet</a>: 受控扩散生成模型, <a href="https://arxiv.org/pdf/2302.05543.pdf">arxiv</a></a></h3>
+<h2 id="计算基础-5"><a class="header" href="#计算基础-5">计算基础</a></h2>
+<h2 id="实用工具-5"><a class="header" href="#实用工具-5">实用工具</a></h2>
+<h3 id="lightning-pod-算法框架模板"><a class="header" href="#lightning-pod-算法框架模板"><a href="https://github.com/JustinGoheen/lightning-pod">lightning-pod</a>: 算法框架模板</a></h3>
+<ul>
+<li>包含Module/Trainer/API/CLI等部分</li>
+</ul>
+<h3 id="一图胜千言超形象图解numpy教程-numpy图文教程"><a class="header" href="#一图胜千言超形象图解numpy教程-numpy图文教程"><a href="https://zhuanlan.zhihu.com/p/504917890">一图胜千言，超形象图解NumPy教程！</a>: numpy图文教程</a></h3>
+<h3 id="mdbook-markdown-to-html"><a class="header" href="#mdbook-markdown-to-html"><a href="https://github.com/rust-lang/mdBook">mdBook</a>: markdown to html</a></h3>
+<ul>
+<li>本文就是用该工具生成的</li>
+</ul>
+<h2 id="生活杂谈-5"><a class="header" href="#生活杂谈-5">生活杂谈</a></h2>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
